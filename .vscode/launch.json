@@ -1,0 +1,658 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "RemoveDuplicatesFromListv3",
+            "request": "launch",
+            "mainClass": "RemoveDuplicatesFromList.RemoveDuplicatesFromListv3",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "RemoveDuplicatesFromListv2",
+            "request": "launch",
+            "mainClass": "RemoveDuplicatesFromList.RemoveDuplicatesFromListv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "RemoveDuplicatesFromListv1",
+            "request": "launch",
+            "mainClass": "RemoveDuplicatesFromListv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "RemoveDuplicatesFromListv1",
+            "request": "launch",
+            "mainClass": "RemoveDuplicatesFromList.RemoveDuplicatesFromListv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "ServidorTCP",
+            "request": "launch",
+            "mainClass": "ServidorTCP",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "mergeIntervalsv3",
+            "request": "launch",
+            "mainClass": "mergeIntervalsv3",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "mergeIntervalsv2",
+            "request": "launch",
+            "mainClass": "mergeIntervalsv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "MergeTwoListsWithAnimation",
+            "request": "launch",
+            "mainClass": "MergeTwoListsWithAnimation",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "LengthOfLastWordv4",
+            "request": "launch",
+            "mainClass": "LengthOfLastWord.LengthOfLastWordv4",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "mergeSortedArraysv2",
+            "request": "launch",
+            "mainClass": "MergeSortedArray.mergeSortedArraysv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "mergeSortedArraysv1",
+            "request": "launch",
+            "mainClass": "MergeSortedArray.mergeSortedArraysv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "PathSumIIIv3",
+            "request": "launch",
+            "mainClass": "PathSumIIIv3",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "PathSumIIIv2",
+            "request": "launch",
+            "mainClass": "PathSumIIIv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "PathSumIIIv1",
+            "request": "launch",
+            "mainClass": "PathSumIIIv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "BinaryTreePathsv3",
+            "request": "launch",
+            "mainClass": "BinaryTreePaths.BinaryTreePathsv3",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "BinaryTreePathsv2",
+            "request": "launch",
+            "mainClass": "BinaryTreePaths.BinaryTreePathsv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "ShortestPalindromev1",
+            "request": "launch",
+            "mainClass": "ShortestPalindrome.ShortestPalindromev1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "SortColorsv2",
+            "request": "launch",
+            "mainClass": "SortColorsv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "SortColorsv1",
+            "request": "launch",
+            "mainClass": "SortColorsv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "MergeTwoListsv2",
+            "request": "launch",
+            "mainClass": "MergeTwoListsv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "MergeTwoListsv1",
+            "request": "launch",
+            "mainClass": "MergeTwoListsv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "ValidParenthesesv2",
+            "request": "launch",
+            "mainClass": "ValidParentheses.ValidParenthesesv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "ValidParenthesesv1",
+            "request": "launch",
+            "mainClass": "ValidParentheses.ValidParenthesesv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "searchInsertPositionv4",
+            "request": "launch",
+            "mainClass": "searchInsertPosition.searchInsertPositionv4",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "d",
+            "request": "launch",
+            "mainClass": "PathSumII.d",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "PathSumIIv2",
+            "request": "launch",
+            "mainClass": "PathSumII.PathSumIIv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "abdominales",
+            "request": "launch",
+            "mainClass": "abdominales",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "RomanToIntegerv2",
+            "request": "launch",
+            "mainClass": "RomanToInteger.RomanToIntegerv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "RomanToIntegerv1",
+            "request": "launch",
+            "mainClass": "RomanToInteger.RomanToIntegerv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "CountAndSayv3",
+            "request": "launch",
+            "mainClass": "CountAndSay.CountAndSayv3",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "CountAndSayv2",
+            "request": "launch",
+            "mainClass": "CountAndSay.CountAndSayv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "CountAndSayv1",
+            "request": "launch",
+            "mainClass": "CountAndSay.CountAndSayv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "d",
+            "request": "launch",
+            "mainClass": "AddTwoNumbers.d",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "AddTwoNumbersv2",
+            "request": "launch",
+            "mainClass": "AddTwoNumbers.AddTwoNumbersv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "AddTwoNumbersv1",
+            "request": "launch",
+            "mainClass": "AddTwoNumbers.AddTwoNumbersv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "ShortestPalindromev6",
+            "request": "launch",
+            "mainClass": "ShortestPalindrome.ShortestPalindromev6",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "BalancedTreev1",
+            "request": "launch",
+            "mainClass": "BalancedTree.BalancedTreev1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "BalancedTreev2",
+            "request": "launch",
+            "mainClass": "BalancedTree.BalancedTreev2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "containsDuplicatesv1",
+            "request": "launch",
+            "mainClass": "ContainsDuplicates.containsDuplicatesv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "containsDuplicatesv2",
+            "request": "launch",
+            "mainClass": "ContainsDuplicates.containsDuplicatesv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "containsDuplicatesv3",
+            "request": "launch",
+            "mainClass": "ContainsDuplicates.containsDuplicatesv3",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "GenerateParenthesisv1",
+            "request": "launch",
+            "mainClass": "GenerateParenthesisv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "GenerateParenthesisv2",
+            "request": "launch",
+            "mainClass": "GenerateParenthesisv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "IndexOfFirstOccurrencev1",
+            "request": "launch",
+            "mainClass": "IndexOfFirstOccurrence.IndexOfFirstOccurrencev1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "IndexOfFirstOccurrencev2",
+            "request": "launch",
+            "mainClass": "IndexOfFirstOccurrence.IndexOfFirstOccurrencev2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "IndexOfFirstOccurrencev3",
+            "request": "launch",
+            "mainClass": "IndexOfFirstOccurrence.IndexOfFirstOccurrencev3",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "LengthOfLastWordv1",
+            "request": "launch",
+            "mainClass": "LengthOfLastWord.LengthOfLastWordv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "LengthOfLastWordv2",
+            "request": "launch",
+            "mainClass": "LengthOfLastWord.LengthOfLastWordv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "LengthOfLastWordv3",
+            "request": "launch",
+            "mainClass": "LengthOfLastWord.LengthOfLastWordv3",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "MedianOf2SortedArraysv1",
+            "request": "launch",
+            "mainClass": "MedianOf2SortedArrays.MedianOf2SortedArraysv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "MedianOf2SortedArraysv2",
+            "request": "launch",
+            "mainClass": "MedianOf2SortedArrays.MedianOf2SortedArraysv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "PalindromeNumber",
+            "request": "launch",
+            "mainClass": "PalindromeNumbers.PalindromeNumber",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "PalindromeNumber2",
+            "request": "launch",
+            "mainClass": "PalindromeNumbers.PalindromeNumber2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "PathSumv1",
+            "request": "launch",
+            "mainClass": "PathSum.PathSumv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "PathSumv2",
+            "request": "launch",
+            "mainClass": "PathSum.PathSumv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "powv1",
+            "request": "launch",
+            "mainClass": "Pow.powv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "powv2",
+            "request": "launch",
+            "mainClass": "Pow.powv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "ReverseIntegerv1",
+            "request": "launch",
+            "mainClass": "ReverseInteger.ReverseIntegerv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "ReverseIntegerv2",
+            "request": "launch",
+            "mainClass": "ReverseInteger.ReverseIntegerv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "sqrtv1",
+            "request": "launch",
+            "mainClass": "SQRT.sqrtv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "singleNumberv1",
+            "request": "launch",
+            "mainClass": "SingleNumber.singleNumberv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "singleNumberv2",
+            "request": "launch",
+            "mainClass": "SingleNumber.singleNumberv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "TwoSum",
+            "request": "launch",
+            "mainClass": "TwoSums.TwoSum",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "TwoSum2",
+            "request": "launch",
+            "mainClass": "TwoSums.TwoSum2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "addBinaryv1",
+            "request": "launch",
+            "mainClass": "addBinary.addBinaryv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "addBinaryv2",
+            "request": "launch",
+            "mainClass": "addBinary.addBinaryv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "addBinaryv3",
+            "request": "launch",
+            "mainClass": "addBinary.addBinaryv3",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "addBinaryv4",
+            "request": "launch",
+            "mainClass": "addBinary.addBinaryv4",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "divideTwoIntegersv1",
+            "request": "launch",
+            "mainClass": "divideTwoIntegersv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "divideTwoIntegersv2",
+            "request": "launch",
+            "mainClass": "divideTwoIntegersv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "isPalindromev1",
+            "request": "launch",
+            "mainClass": "isPalindrome.isPalindromev1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "isPalindromev2",
+            "request": "launch",
+            "mainClass": "isPalindrome.isPalindromev2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "majorityElementv1",
+            "request": "launch",
+            "mainClass": "majorityElement.majorityElementv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "majorityElementv2",
+            "request": "launch",
+            "mainClass": "majorityElement.majorityElementv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "majorityElementv3$majorityElementv2",
+            "request": "launch",
+            "mainClass": "majorityElement.majorityElementv3$majorityElementv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "numberOf1Bitsv1",
+            "request": "launch",
+            "mainClass": "numberOf1Bitsv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "numberOf1Bitsv2",
+            "request": "launch",
+            "mainClass": "numberOf1Bitsv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "plusOnev1",
+            "request": "launch",
+            "mainClass": "plusOnev1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "plusOnev2",
+            "request": "launch",
+            "mainClass": "plusOnev2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "plusOnev3",
+            "request": "launch",
+            "mainClass": "plusOnev3",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "plusOnev4",
+            "request": "launch",
+            "mainClass": "plusOnev4",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "plusOnev5",
+            "request": "launch",
+            "mainClass": "plusOnev5",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "removeDuplicatesv1",
+            "request": "launch",
+            "mainClass": "removeDuplicates.removeDuplicatesv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "removeDuplicatesv2",
+            "request": "launch",
+            "mainClass": "removeDuplicates.removeDuplicatesv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "removeElementv1",
+            "request": "launch",
+            "mainClass": "removeElement.removeElementv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "removeElementv2",
+            "request": "launch",
+            "mainClass": "removeElement.removeElementv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "removeElementv3",
+            "request": "launch",
+            "mainClass": "removeElement.removeElementv3",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "reverseBitsv1",
+            "request": "launch",
+            "mainClass": "reverseBitsv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "reverseBitsv2",
+            "request": "launch",
+            "mainClass": "reverseBitsv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "searchInsertPositionv1",
+            "request": "launch",
+            "mainClass": "searchInsertPosition.searchInsertPositionv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "searchInsertPositionv2",
+            "request": "launch",
+            "mainClass": "searchInsertPosition.searchInsertPositionv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "searchInsertPositionv3",
+            "request": "launch",
+            "mainClass": "searchInsertPosition.searchInsertPositionv3",
+            "projectName": "LeetCode_449c3d1"
+        }
+    ]
+}
