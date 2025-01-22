@@ -1,4 +1,4 @@
-package searchInsertPosition;
+package SearchInsertPosition;
 
 public class searchInsertPositionv3 {
     public static void main(String[] args) {

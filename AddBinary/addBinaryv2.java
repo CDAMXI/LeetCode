@@ -1,4 +1,4 @@
-package addBinary;
+package AddBinary;
 
 public class addBinaryv2 {
     public static void main(String[] args) {

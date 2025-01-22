@@ -1,4 +1,4 @@
-package majorityElement;
+package MajorityElement;
 
 public class majorityElementv3 {
 

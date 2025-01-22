@@ -1,4 +1,4 @@
-package majorityElement;
+package MajorityElement;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package addBinary;
+package AddBinary;
 
 import java.math.*;
 

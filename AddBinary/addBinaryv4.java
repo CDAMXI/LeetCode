@@ -1,4 +1,4 @@
-package addBinary;
+package AddBinary;
 
 import java.math.*;
 import java.util.*;
@@ -24,13 +24,7 @@ public class addBinaryv4 {
 
     public static String addBinary(String a, String b){
         // Validar que solo contengan ceros y unos
-        if (!a.matches("[01]+")) {
-            a = convertToBinary(a);
-        }
-
-        if(!b.matches("[01]+")){
-            b = convertToBinary(b);
-        }
+        if (!a.matches("[01]+") || !b.matches("[01]+")) {return "";}
 
         // Sumar los valores
         BigInteger result = new BigInteger(a, 2).add(new BigInteger(b, 2));

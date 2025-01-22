@@ -1,4 +1,4 @@
-package removeDuplicates;
+package RemoveDuplicates;
 
 public class removeDuplicatesv2 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package removeElement;
+package RemoveElement;
 
 public class removeElementv2 {
     public static void main(String[] args) {
