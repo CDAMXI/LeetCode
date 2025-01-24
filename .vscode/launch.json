@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MaximumDepthOfTreev2",
+            "request": "launch",
+            "mainClass": "MaximumDepthOfTreev2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "MaximumDepthOfTreev1",
+            "request": "launch",
+            "mainClass": "MaximumDepthOfTreev1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
             "name": "RemoveDuplicatesFromListv3",
             "request": "launch",
             "mainClass": "RemoveDuplicatesFromList.RemoveDuplicatesFromListv3",
