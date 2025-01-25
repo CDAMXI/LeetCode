@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MaximumDepthOfTreev3",
+            "request": "launch",
+            "mainClass": "MaximumDepthOfTreev3",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
             "name": "MaximumDepthOfTreev2",
             "request": "launch",
             "mainClass": "MaximumDepthOfTreev2",
