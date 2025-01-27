@@ -12,38 +12,38 @@ public class MaximumDepthOfTreev3 {
     }
 
     public static int maxDepth(TreeNode root) {
-    if (root == null) {
-        return 0;
-    }
-
-    // Usar una pila para realizar una simulación iterativa de DFS
-    Stack<TreeNode> stack = new Stack<>();
-    Stack<Integer> depths = new Stack<>();
-
-    stack.push(root);
-    depths.push(1); // La profundidad inicial del nodo raíz es 1
-
-    int maxDepth = 0;
-
-    while (!stack.isEmpty()) {
-        TreeNode node = stack.pop();
-        int currentDepth = depths.pop();
-
-        // Actualizar la profundidad máxima
-        maxDepth = Math.max(maxDepth, currentDepth);
-
-        // Agregar los hijos al stack junto con sus respectivas profundidades
-        if (node.left != null) {
-            stack.push(node.left);
-            depths.push(currentDepth + 1);
+        if (root == null) {
+            return 0;
         }
-        if (node.right != null) {
-            stack.push(node.right);
-            depths.push(currentDepth + 1);
+    
+        // Usar una pila para realizar una simulación iterativa de DFS
+        Stack<TreeNode> stack = new Stack<>();
+        Stack<Integer> depths = new Stack<>();
+    
+        stack.push(root);
+        depths.push(1); // La profundidad inicial del nodo raíz es 1
+    
+        int maxDepth = 0;
+    
+        while (!stack.isEmpty()) {
+            TreeNode node = stack.pop();
+            int currentDepth = depths.pop();
+    
+            // Actualizar la profundidad máxima
+            maxDepth = Math.max(maxDepth, currentDepth);
+    
+            // Agregar los hijos al stack junto con sus respectivas profundidades
+            if (node.left != null) {
+                stack.push(node.left);
+                depths.push(currentDepth + 1);
+            }
+            if (node.right != null) {
+                stack.push(node.right);
+                depths.push(currentDepth + 1);
+            }
         }
+    
+        return maxDepth;
     }
-
-    return maxDepth;
-}
 
 }

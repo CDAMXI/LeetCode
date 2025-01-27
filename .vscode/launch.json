@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LongestCommonPrefixv3",
+            "request": "launch",
+            "mainClass": "LongestCommonPrefix.LongestCommonPrefixv3",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "LongestCommonPrefixv2",
+            "request": "launch",
+            "mainClass": "LongestCommonPrefix.LongestCommonPrefixv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "LongestCommonPrefixv1",
+            "request": "launch",
+            "mainClass": "LongestCommonPrefix.LongestCommonPrefixv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "MaximumDepthOfTreev2v2",
+            "request": "launch",
+            "mainClass": "MaximumDepthOfTreev2v2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
             "name": "MaximumDepthOfTreev3",
             "request": "launch",
             "mainClass": "MaximumDepthOfTreev3",

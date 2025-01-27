@@ -1,4 +1,4 @@
-public class MaximumDepthOfTreev2 {
+public class MaximumDepthOfTreev2v2 {
     public static void main(String[] args) {
         TreeNode tr = new TreeNode(3);
         tr.left = new TreeNode(9);
@@ -15,12 +15,7 @@ public class MaximumDepthOfTreev2 {
             return 0;
         }
     
-        // Obtener la profundidad máxima de los subárboles izquierdo y derecho
-        int leftDepth = maxDepth(root.left);
-        int rightDepth = maxDepth(root.right);
-    
         // La profundidad máxima del árbol actual es 1 (nodo actual) + mayor profundidad de los hijos
-        return 1 + Math.max(leftDepth, rightDepth);
+        return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
     }
-    
 }
