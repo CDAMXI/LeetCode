@@ -7,8 +7,8 @@ This repository contains all the solutions I have developed for LeetCode problem
 
 ## Repository Structure
 
-- **Folders by Category**: The problems are organized by topics (arrays, strings, dynamic programming, etc.) for easy navigation.
-- **Descriptive File Names**: Each code file is named after the problem title or a relevant description for easy identification.
+- **Folders by Category:** The problems are organized into folders by category for easy navigation.
+- **Descriptive File Names:** Each code file is named after the problem's title and its corresponding version.
 
 ### Example Solution
 ```java
