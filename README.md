@@ -13,14 +13,23 @@ This repository contains all the solutions I have developed for LeetCode problem
 ### Example Solution
 ```java
 // ExampleProblem.java
-public static void main(String[] args){
-    //Call Method with arguments
-}
 public class ExampleProblem {
-    public int exampleMethod(int[] nums) {
-        // Example implementation
+    public static void main(String[] args) {
+        // Call the example method with test arguments
+        int[] nums = {1, 2, 3};
+        System.out.println(exampleMethod(nums));
+    }
+
+    public static int exampleMethod(int[] nums) {
+        // Example implementation: calculate the sum of the array
+        int sum = 0;
+        for (int num : nums) {
+            sum += num;
+        }
+        return sum;
     }
 }
+
 ```
 
 How to Compile and Run
