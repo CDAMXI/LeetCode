@@ -13,6 +13,9 @@ This repository contains all the solutions I have developed for LeetCode problem
 ### Example Solution
 ```java
 // ExampleProblem.java
+public static void main(String[] args){
+    //Call Method with arguments
+}
 public class ExampleProblem {
     public int exampleMethod(int[] nums) {
         // Example implementation
