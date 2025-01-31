@@ -1,14 +1,35 @@
 package PascalsTriangle;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class PascalsTrianglev2 {
     public static void main(String[] args) {
-        List<List<Integer>> pascalTriangle = generate(5);
-        for (List<Integer> row : pascalTriangle) {
-            System.out.println(row);
+        Scanner kbd = new Scanner(System.in);
+        boolean isValid = false;
+
+        while (!isValid) {
+            try {
+                System.out.print("Enter the number of rows desired for Pascal's Triangle: ");
+                int rows = kbd.nextInt();
+                
+                if (rows <= 0) {
+                    System.out.println("Please enter a positive integer.");
+                    continue; // Pedir nuevamente un valor válido
+                }
+
+                List<List<Integer>> pascalTriangle = generate(rows);
+                for (List<Integer> row : pascalTriangle) {
+                    System.out.println(row);
+                }
+
+                isValid = true; // Se introduce un valor válido, salir del ciclo
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid input. Please enter a positive integer.");
+                kbd.next(); // Consumir el token inválido
+            }
         }
+
+        kbd.close(); // Cerrar el scanner al final
     }
 
     public static List<List<Integer>> generate(int numRows) {

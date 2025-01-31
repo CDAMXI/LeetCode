@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PascalsTrianglev2",
+            "request": "launch",
+            "mainClass": "PascalsTriangle.PascalsTrianglev2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
             "name": "PascalsTrianglev1",
             "request": "launch",
             "mainClass": "PascalsTriangle.PascalsTrianglev1",
