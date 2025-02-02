@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PowerOfThreev3",
+            "request": "launch",
+            "mainClass": "PowOfThree.PowerOfThreev3",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "PowerOfThreev1",
+            "request": "launch",
+            "mainClass": "PowOfThree.PowerOfThreev1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
             "name": "AddDigitsv1",
             "request": "launch",
             "mainClass": "AddDigits.AddDigitsv1",
