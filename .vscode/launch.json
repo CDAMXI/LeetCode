@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PowerOfTwov2",
+            "request": "launch",
+            "mainClass": "PowerOfTwo.PowerOfTwov2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "PowerOfTwov1",
+            "request": "launch",
+            "mainClass": "PowerOfTwo.PowerOfTwov1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
             "name": "count",
             "request": "launch",
             "mainClass": "count",
