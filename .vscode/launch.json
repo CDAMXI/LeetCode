@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AddDigitsv1",
+            "request": "launch",
+            "mainClass": "AddDigits.AddDigitsv1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
             "name": "PowerOfTwov2",
             "request": "launch",
             "mainClass": "PowerOfTwo.PowerOfTwov2",
