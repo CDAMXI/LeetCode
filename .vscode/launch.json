@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PowerOfFourv2",
+            "request": "launch",
+            "mainClass": "PowerOfFour.PowerOfFourv2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
             "name": "PowerOfThreev3",
             "request": "launch",
             "mainClass": "PowOfThree.PowerOfThreev3",
