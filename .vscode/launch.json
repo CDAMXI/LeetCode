@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Trianglev2",
+            "request": "launch",
+            "mainClass": "Triangle.Trianglev2",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
+            "name": "Trianglev1",
+            "request": "launch",
+            "mainClass": "Triangle.Trianglev1",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
             "name": "PowerOfFourv2",
             "request": "launch",
             "mainClass": "PowerOfFour.PowerOfFourv2",
