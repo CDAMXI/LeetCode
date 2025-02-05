@@ -40,3 +40,5 @@ Each solution includes all necessary classes to compile it as a standalone progr
 Next Steps:
   - Continue adding solutions to new problems.
   - Improve the efficiency of existing solutions.
+
+It´s important to mention that all the exercises come with exapmples in main.
