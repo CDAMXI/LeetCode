@@ -35,7 +35,7 @@ public class PascalsTrianglev2 {
     public static List<List<Integer>> generate(int numRows) {
         List<List<Integer>> result = new ArrayList<>(); // Lista principal
 
-        if (numRows <= 0) return result; // Si no hay filas, retornar lista vacía
+        if (numRows <= 0){return result;} // Si no hay filas, retornar lista vacía
 
         // Primera fila siempre es [1]
         result.add(new ArrayList<>(List.of(1)));

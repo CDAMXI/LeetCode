@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Trianglev4",
+            "request": "launch",
+            "mainClass": "Triangle.Trianglev4",
+            "projectName": "LeetCode_449c3d1"
+        },
+        {
+            "type": "java",
             "name": "Trianglev2",
             "request": "launch",
             "mainClass": "Triangle.Trianglev2",
