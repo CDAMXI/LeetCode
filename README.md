@@ -36,8 +36,8 @@ Each solution includes all the necessary classes to compile it as a standalone p
 - Compile the file using javac FileName.java.
 - Run the compiled file with java FileName.
 
-## Next Steps
-Continue adding solutions to new problems.
-Improve the efficiency of existing solutions.
+## Next Steps  
+- Continue adding solutions to new problems.
+- Improve the efficiency of existing solutions.
 
 Note: All exercises include example test cases in the main method.
