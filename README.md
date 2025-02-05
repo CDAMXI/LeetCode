@@ -36,7 +36,7 @@ Each solution includes all the necessary classes to compile it as a standalone p
     - Run the compiled file with java FileName.
 
 ## Next Steps
-    - Continue adding solutions to new problems.
-    - Improve the efficiency of existing solutions.
+Continue adding solutions to new problems.
+Improve the efficiency of existing solutions.
 
 Note: All exercises include example test cases in the main method.
