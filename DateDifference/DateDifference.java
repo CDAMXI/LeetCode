@@ -4,22 +4,28 @@ import java.util.*;
 
 public class DateDifference {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
         
-        LocalDate fecha1 = solicitarFecha(scanner, "primera");
-        LocalDate fecha2 = solicitarFecha(scanner, "segunda");
-        
-        if (fecha1.isAfter(fecha2)) {
-            LocalDate temp = fecha1;
-            fecha1 = fecha2;
-            fecha2 = temp;
+            LocalDate date1 = solicitarFecha(scanner, "primera");
+            LocalDate date2 = solicitarFecha(scanner, "segunda");
+            
+            if (date1.isAfter(date2)) {
+                /**
+                 * A temporary LocalDate variable used to store the value of date1.
+                 */
+                LocalDate temp = date1;
+                date1 = date2;
+                date2 = temp;
+            }
+            
+            Period diferencia = Period.between(date1, date2);
+            
+            System.out.println("Han pasado " + diferencia.getYears() + " años, " + diferencia.getMonths() + " meses y " + diferencia.getDays() + " días.");
+            
+            scanner.close();
+            System.out.println("________________________________________________________");
         }
-        
-        Period diferencia = Period.between(fecha1, fecha2);
-        
-        System.out.println("Han pasado " + diferencia.getYears() + " años, " + diferencia.getMonths() + " meses y " + diferencia.getDays() + " días.");
-        
-        scanner.close();
     }
 
     private static LocalDate solicitarFecha(Scanner scanner, String orden) {
