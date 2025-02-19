@@ -7,8 +7,8 @@ public class DateDifference {
         while (true) {
             Scanner scanner = new Scanner(System.in);
         
-            LocalDate date1 = solicitarFecha(scanner, "primera");
-            LocalDate date2 = solicitarFecha(scanner, "segunda");
+            LocalDate date1 = solicitarFecha(scanner, "first");
+            LocalDate date2 = solicitarFecha(scanner, "second");
             
             if (date1.isAfter(date2)) {
                 /**
@@ -19,9 +19,9 @@ public class DateDifference {
                 date2 = temp;
             }
             
-            Period diferencia = Period.between(date1, date2);
+            Period difference = Period.between(date1, date2);
             
-            System.out.println("Han pasado " + diferencia.getYears() + " años, " + diferencia.getMonths() + " meses y " + diferencia.getDays() + " días.");
+            System.out.println("Han pasado " + difference.getYears() + " años, " + difference.getMonths() + " meses y " + difference.getDays() + " días.");
             
             scanner.close();
             System.out.println("________________________________________________________");
