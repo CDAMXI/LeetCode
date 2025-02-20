@@ -16,8 +16,7 @@ This repository contains all the solutions I have developed for LeetCode problem
 public class ExampleProblem {
     public static void main(String[] args) {
         // Call the example method with test arguments
-        int[] nums = {1, 2, 3};
-        System.out.println(exampleMethod(nums));
+        System.out.println(exampleMethod(new int[] {1, 2 ,3}));
     }
 
     public static int exampleMethod(int[] nums) {
