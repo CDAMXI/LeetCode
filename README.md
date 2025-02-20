@@ -31,12 +31,12 @@ public class ExampleProblem {
 }
 ```
 
-##How to Compile and Run
+## How to Compile and Run
 Each solution includes all the necessary classes to compile it as a standalone program. To run a solution:
 1. Compile the file using ```javac FileName.java```.
 2. Run the compiled file with ```java FileName```.
 
-##Next Steps
+## Next Steps
 - Continue adding solutions to new problems.
 - Improve the efficiency of existing solutions.
 
