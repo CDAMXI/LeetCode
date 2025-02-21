@@ -7,6 +7,8 @@ public class LetterCombinationv2 {
         System.out.println(letterCombinations("23"));
         System.out.println(letterCombinations("2"));
         System.out.println(letterCombinations(""));
+        System.out.println(letterCombinations("234"));
+        System.out.println(letterCombinations("222"));
     }
 
     public static List<String> letterCombinations(String digits){
