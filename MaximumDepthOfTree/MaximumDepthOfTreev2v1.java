@@ -10,17 +10,16 @@ public class MaximumDepthOfTreev2v1 {
     }
 
     public static int maxDepth(TreeNode root) {
-        // Caso base: Si el nodo es null, la profundidad es 0
+        // Base case: If the node is null, the depth is 0
         if (root == null) {
             return 0;
         }
     
-        // Obtener la profundidad máxima de los subárboles izquierdo y derecho
+        // Get the maximum depth of the left and right subtrees
         int leftDepth = maxDepth(root.left);
         int rightDepth = maxDepth(root.right);
     
-        // La profundidad máxima del árbol actual es 1 (nodo actual) + mayor profundidad de los hijos
+        // The maximum depth of the current tree is 1 (current node) + the greater depth of the children
         return 1 + Math.max(leftDepth, rightDepth);
     }
-    
 }

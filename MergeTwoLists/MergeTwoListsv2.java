@@ -12,10 +12,10 @@ public class MergeTwoListsv2 {
     }
 
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        ListNode result = new ListNode(0);  // Nodo dummy
+        ListNode result = new ListNode(0);  // Dummy node
         ListNode pointer = result;
     
-        // Fusionar las listas reutilizando los nodos existentes
+        // Merge the lists by reusing the existing nodes
         while (list1 != null && list2 != null) {
             if (list1.val < list2.val) {
                 pointer.next = list1;
@@ -27,10 +27,10 @@ public class MergeTwoListsv2 {
             pointer = pointer.next;
         }
     
-        // Conectar directamente el resto de la lista no vacía
+        // Connect directly the rest of the non-empty list
         pointer.next = (list1 != null) ? list1 : list2;
     
-        return result.next;  // Saltar el nodo dummy
+        return result.next;  // Skip the dummy node
     }    
 
     public static void printList(ListNode node) {

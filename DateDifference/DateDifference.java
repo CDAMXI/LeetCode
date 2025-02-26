@@ -21,27 +21,27 @@ public class DateDifference {
             
             Period difference = Period.between(date1, date2);
             
-            System.out.println("Han pasado " + difference.getYears() + " años, " + difference.getMonths() + " meses y " + difference.getDays() + " días.");
+            System.out.println("It has been " + difference.getYears() + " years, " + difference.getMonths() + " months, and " + difference.getDays() + " days.");
             
             scanner.close();
             System.out.println("________________________________________________________");
         }
     }
 
-    private static LocalDate askDate(Scanner scanner, String orden) {
+    private static LocalDate askDate(Scanner scanner, String order) {
         while (true) {
             try {
-                System.out.print("Put " + orden + " date (DD MM YYYY): ");
-                int dia = scanner.nextInt();
-                int mes = scanner.nextInt();
-                int anio = scanner.nextInt();
-                return LocalDate.of(anio, mes, dia);
+                System.out.print("Enter " + order + " date (DD MM YYYY): ");
+                int day = scanner.nextInt();
+                int month = scanner.nextInt();
+                int year = scanner.nextInt();
+                return LocalDate.of(year, month, day);
             } catch (InputMismatchException e) {
-                System.out.println("Error: Put only valid numbers.");
-                scanner.nextLine(); // Limpiar buffer
+                System.out.println("Error: Enter only valid numbers.");
+                scanner.nextLine(); // Clear buffer
             } catch (Exception e) {
-                System.out.println("Error: Date is not valid. Try again.");
-                scanner.nextLine(); // Limpiar buffer
+                System.out.println("Error: The date is not valid. Try again.");
+                scanner.nextLine(); // Clear buffer
             }
         }
     }

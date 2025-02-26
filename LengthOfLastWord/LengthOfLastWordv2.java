@@ -10,16 +10,18 @@ public class LengthOfLastWordv2 {
     }
 
     public static int lengthOfLastWord(String s) {
-        s = s.trim();
+        s = s.trim(); // Remove leading and trailing spaces
 
-        // Recorre la cadena de atrás hacia adelante
-        int cont = 0;
+        // Traverse the string from the end to the beginning
+        int count = 0;
         for (int i = s.length() - 1; i >= 0; i--) {
             if (s.charAt(i) != ' ') {
-                cont++;
-            } else {break; }
+                count++; // Count characters of the last word
+            } else {
+                break; // Stop when a space is encountered
+            }
         }
 
-        return cont;
+        return count;
     }
 }

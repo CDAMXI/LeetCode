@@ -5,43 +5,43 @@ public class divideTwoIntegersv2 {
     }
 
     public static int divide(int dividend, int divisor) {
-        // Manejo de caso especial de divisor igual a 0
+        // Handle special case of divisor being 0
         if (divisor == 0) {
             throw new ArithmeticException("Division by zero is not allowed.");
         }
         
-        // Manejo de caso especial de desbordamiento
+        // Handle special case of overflow
         if (dividend == Integer.MIN_VALUE && divisor == -1) {
-            return Integer.MAX_VALUE; // Evitar desbordamiento
+            return Integer.MAX_VALUE; // Avoid overflow
         }
 
-        // Determinar el signo del resultado
+        // Determine the sign of the result
         boolean isNegative = (dividend < 0) ^ (divisor < 0);
 
-        // Trabajar con valores absolutos
+        // Work with absolute values
         long absDividend = Math.abs((long) dividend);
         long absDivisor = Math.abs((long) divisor);
 
-        // Inicializar el cociente
+        // Initialize the quotient
         int result = 0;
 
-        // Realizar la división usando restas y desplazamientos binarios
+        // Perform division using subtraction and binary shifts
         while (absDividend >= absDivisor) {
             long tempDivisor = absDivisor;
             int multiple = 1;
 
-            // Incrementar el divisor usando desplazamientos binarios
+            // Increment the divisor using binary shifts
             while (absDividend >= (tempDivisor << 1)) {
                 tempDivisor <<= 1;
                 multiple <<= 1;
             }
 
-            // Restar el mayor múltiplo del divisor posible
+            // Subtract the largest possible multiple of the divisor
             absDividend -= tempDivisor;
             result += multiple;
         }
 
-        // Devolver el resultado con el signo correcto
+        // Return the result with the correct sign
         return isNegative ? -result : result;
     }
 }

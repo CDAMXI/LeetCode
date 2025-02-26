@@ -10,11 +10,11 @@ public class LengthOfLastWordv4 {
     }
 
     public static int lengthOfLastWord(String s) {
-        int length = 0; // Longitud de la última palabra
-        s = s.trim();
+        int length = 0; // Length of the last word
+        s = s.trim(); // Remove leading and trailing spaces
         int i = s.length() - 1;
 
-        // Contar la longitud de la última palabra
+        // Count the length of the last word
         while (i >= 0 && s.charAt(i) != ' ') {
             length++;
             i--;
