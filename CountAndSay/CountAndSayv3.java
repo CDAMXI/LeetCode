@@ -36,7 +36,7 @@ public class CountAndSayv3 {
             }
     
             current.append(count).append(prev);
-            result = current; // Reutilizamos `result` para evitar crear nuevas cadenas
+            result = current; // Reuse `result` to avoid creating new strings
         }
     
         return result.toString();

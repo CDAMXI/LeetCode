@@ -21,13 +21,13 @@ public class BinaryTreePathsv3 {
     }
 
     private static void findPaths(TreeNode node, StringBuilder path, List<String> result) {
-        int lengthBefore = path.length();  // Guardar el estado actual del StringBuilder
-        path.append(node.val);  // Agregar el valor actual
+        int lengthBefore = path.length();  // Save the current state of the StringBuilder
+        path.append(node.val);  // Add the current value
 
         if (node.left == null && node.right == null) {
-            result.add(path.toString());  // Agregar el camino completo al resultado
+            result.add(path.toString());  // Add the complete path to the result
         } else {
-            path.append("->");  // Agregar la flecha solo si hay hijos
+            path.append("->");  // Add the arrow only if there are children
             if (node.left != null) {
                 findPaths(node.left, path, result);
             }
@@ -35,7 +35,7 @@ public class BinaryTreePathsv3 {
                 findPaths(node.right, path, result);
             }
         }
-        path.setLength(lengthBefore);  // Restaurar el estado original del StringBuilder
+        path.setLength(lengthBefore);  // Restore the StringBuilder to its original state
     }
 
     private static TreeNode createTreeFromArray(Integer[] values) {

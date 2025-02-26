@@ -35,7 +35,7 @@ private static void findPaths(TreeNode node, StringBuilder path, List<String> re
             findPaths(node.right, path, result);
         }
     }
-    path.setLength(lengthBefore);  // Restaurar el estado original del StringBuilder
+    path.setLength(lengthBefore);  // Restore the StringBuilder to its original state
 }
 
 

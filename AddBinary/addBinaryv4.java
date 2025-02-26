@@ -6,36 +6,37 @@ import java.util.*;
 public class addBinaryv4 {
     public static void main(String[] args) {
         Scanner kbd = new Scanner(System.in);
-        String a,b;
+        String a, b;
         do {
-            System.out.print("Introduce the first value: ");
+            System.out.print("Enter the first value: ");
             a = kbd.next();
-        } while (!a.chars().allMatch(Character::isDigit)); //Se están usando expresiones lambda
+        } while (!a.chars().allMatch(Character::isDigit)); // Lambda expressions are being used
 
         do {
-            System.out.print("Introduce the second value: ");
+            System.out.print("Enter the second value: ");
             b = kbd.next();
-        } while (!b.chars().allMatch(Character::isDigit)); //Se están usando expresiones lambda
-        
-        
-        System.out.println("El resultado en binario es: " + addBinary(a, b));
+        } while (!b.chars().allMatch(Character::isDigit)); // Lambda expressions are being used
+
+        System.out.println("The result in binary is: " + addBinary(a, b));
         kbd.close();
     }
 
-    public static String addBinary(String a, String b){
-        // Validar que solo contengan ceros y unos
-        if (!a.matches("[01]+") || !b.matches("[01]+")) {return "At least one of the numbers is not in binary";}
+    public static String addBinary(String a, String b) {
+        // Validate that the strings contain only zeros and ones
+        if (!a.matches("[01]+") || !b.matches("[01]+")) {
+            return "At least one of the numbers is not in binary";
+        }
 
-        // Sumar los valores
+        // Add the values
         BigInteger result = new BigInteger(a, 2).add(new BigInteger(b, 2));
-        //Al crear el BigInteger, el 2 que se pasa por parámetros, va a transformar el valor b a binario
+        // When creating the BigInteger, the 2 passed as a parameter will convert the value to binary
 
-        // Convertir el resultado de vuelta a binario
+        // Convert the result back to binary
         return result.toString(2);
-        // Pasa result a un string formado por chars correspondientes a valores binarios
+        // Converts result to a string composed of characters corresponding to binary values
     }
 
-    public static String convertToBinary(String a){
+    public static String convertToBinary(String a) {
         BigInteger bi = new BigInteger(a);
         return bi.toString(2);
     }

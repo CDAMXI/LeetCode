@@ -13,10 +13,10 @@ public class containsDuplicatesv3 {
         HashSet<Integer> set = new HashSet<>();
         for (int num : nums) {
             if (set.contains(num)) {
-                return true; // Se encontró un duplicado
+                return true; // A duplicate has been found
             }
             set.add(num);
         }
-        return false; // No se encontraron duplicados
+        return false; // There are no duplicates
     }
 }
