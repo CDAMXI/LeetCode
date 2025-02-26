@@ -17,24 +17,24 @@ public class PascalsTriangleIIv2 {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a non-negative integer.");
-                kbd.next(); // Consumir el token inválido
+                kbd.next(); // Consume the invalid token
             }
         }
 
         kbd.close();
 
-        // Obtener la fila deseada
+        // Get the desired row
         List<Integer> pascalRow = getRow(rows);
         System.out.println(pascalRow);
     }
 
     public static List<Integer> getRow(int rowIndex) {
         List<Integer> row = new ArrayList<>();
-        row.add(1); // Primera posición siempre es 1
+        row.add(1); // First position is always 1
 
-        // Construcción de la fila con una única lista
+        // Build the row using a single list
         for (int i = 1; i <= rowIndex; i++) {
-            row.add((int) ((long) row.get(i - 1) * (rowIndex - i + 1) / i)); // Fórmula combinatoria
+            row.add((int) ((long) row.get(i - 1) * (rowIndex - i + 1) / i)); // Combinatorial formula
         }
 
         return row;

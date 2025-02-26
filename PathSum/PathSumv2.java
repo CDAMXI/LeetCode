@@ -11,10 +11,10 @@ public class PathSumv2 {
     }
 
     public static boolean hasPathSum(TreeNode root, int targetSum) {
-        // Si el nodo es null, no hay camino que sumar
+        // If the node is null, there is no path to sum
         if (root == null) {return false;}
 
-        // Si estamos en una hoja, verificamos si la suma coincide con targetSum
+        // If we are in a leaf, we check if the sum matches targetSum
         if (root.left == null && root.right == null) {return root.val == targetSum;}
         return hasPathSum(root.left, targetSum - root.val) || hasPathSum(root.right, targetSum - root.val);
     }

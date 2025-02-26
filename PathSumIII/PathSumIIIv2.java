@@ -25,11 +25,11 @@ public class PathSumIIIv2 {
             return 0;
         }
 
-        // Agregar el valor actual al camino
+        // Add the current value to the path
         currentPath.add(node.val);
         int pathCount = 0, sum = 0;
 
-        // Verificar caminos que terminan en este nodo
+        // Verify paths ending in this node
         for (int i = currentPath.size() - 1; i >= 0; i--) {
             sum += currentPath.get(i);
             if (sum == targetSum) {
@@ -37,11 +37,11 @@ public class PathSumIIIv2 {
             }
         }
 
-        // Explorar hijos
+        // Explore children
         pathCount += countPaths(node.left, targetSum, currentPath);
         pathCount += countPaths(node.right, targetSum, currentPath);
 
-        // Retroceder para mantener la lista reutilizable
+        // Backtrack to keep the list reusable
         currentPath.remove(currentPath.size() - 1);
         
         return pathCount;
@@ -52,7 +52,7 @@ public class PathSumIIIv2 {
             return null;
         }
 
-        // Crear el nodo raíz
+        // Create the root node
         TreeNode root = new TreeNode(nodes[0]);
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
@@ -61,14 +61,14 @@ public class PathSumIIIv2 {
         while (!queue.isEmpty() && i < nodes.length) {
             TreeNode current = queue.poll();
 
-            // Agregar el hijo izquierdo
+            // Add left child
             if (nodes[i] != null) {
                 current.left = new TreeNode(nodes[i]);
                 queue.add(current.left);
             }
             i++;
 
-            // Agregar el hijo derecho
+            // Add right child
             if (i < nodes.length && nodes[i] != null) {
                 current.right = new TreeNode(nodes[i]);
                 queue.add(current.right);

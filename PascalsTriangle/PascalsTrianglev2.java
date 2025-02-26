@@ -14,7 +14,7 @@ public class PascalsTrianglev2 {
                 
                 if (rows <= 0) {
                     System.out.println("Please enter a positive integer.");
-                    continue; // Pedir nuevamente un valor válido
+                    continue; // Ask for a valid value again
                 }
 
                 List<List<Integer>> pascalTriangle = generate(rows);
@@ -22,39 +22,39 @@ public class PascalsTrianglev2 {
                     System.out.println(row);
                 }
 
-                isValid = true; // Se introduce un valor válido, salir del ciclo
+                isValid = true; // A valid value is entered, exit the loop
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a positive integer.");
-                kbd.next(); // Consumir el token inválido
+                kbd.next(); // Consume the invalid token
             }
         }
 
-        kbd.close(); // Cerrar el scanner al final
+        kbd.close(); // Close the scanner at the end
     }
 
     public static List<List<Integer>> generate(int numRows) {
-        List<List<Integer>> result = new ArrayList<>(); // Lista principal
+        List<List<Integer>> result = new ArrayList<>(); // Main list
 
-        if (numRows <= 0){return result;} // Si no hay filas, retornar lista vacía
+        if (numRows <= 0) {return result;} // If there are no rows, return an empty list
 
-        // Primera fila siempre es [1]
+        // First row is always [1]
         result.add(new ArrayList<>(List.of(1)));
 
-        // Construir las filas desde la segunda hasta numRows
+        // Build rows from the second to numRows
         for (int i = 1; i < numRows; i++) {
-            List<Integer> prevRow = result.get(i - 1); // Fila anterior
-            List<Integer> currentRow = new ArrayList<>(i + 1); // Nueva fila de tamaño dinámico
+            List<Integer> prevRow = result.get(i - 1); // Previous row
+            List<Integer> currentRow = new ArrayList<>(i + 1); // New row with dynamic size
 
-            currentRow.add(1); // Primer elemento siempre es 1
+            currentRow.add(1); // First element is always 1
 
-            // Construir los elementos intermedios usando solo la fila anterior
+            // Build the intermediate elements using only the previous row
             for (int j = 1; j < prevRow.size(); j++) {
                 currentRow.add(prevRow.get(j - 1) + prevRow.get(j));
             }
 
-            currentRow.add(1); // Último elemento siempre es 1
+            currentRow.add(1); // Last element is always 1
 
-            result.add(currentRow); // Agregar la nueva fila al resultado
+            result.add(currentRow); // Add the new row to the result
         }
 
         return result;

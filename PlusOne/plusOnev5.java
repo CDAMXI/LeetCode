@@ -11,18 +11,18 @@ public class plusOnev5 {
     }
 
     public static int[] plusone(int[] digits) {
-        // Iterar desde el último dígito hacia el primero
+        // Iterate from the last digit to the first
         for (int i = digits.length - 1; i >= 0; i--) {
             if (digits[i] < 9) {
                 digits[i]++;
-                return digits; // Retorna directamente si no hay acarreo
+                return digits; // Return directly if there is no carry
             }
-            digits[i] = 0; // Si el dígito es 9, lo establece en 0 y sigue el bucle
+            digits[i] = 0; // If digits[i] is 9, set it to 0 and continue the loop
         }
 
-        // Si todos los dígitos son 9, necesitamos un array más grande
+        // If all digits are 9, we need a bigger array
         int[] result = new int[digits.length + 1];
-        result[0] = 1; // El primer dígito será 1, los demás ya son 0
+        result[0] = 1; // The first digit will be 1, the others are already 0
         return result;
     }
 }

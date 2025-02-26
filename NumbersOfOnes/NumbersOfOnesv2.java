@@ -8,12 +8,12 @@ public class NumbersOfOnesv2 {
 
     public static int countDigitOne(int n) {
         int count = 0;
-        long factor = 1; // Representa las posiciones (1, 10, 100, ...)
+        long factor = 1; // Represents the positions (1, 10, 100, ...)
         
         while (factor <= n) {
-            long lower = n % factor; // Parte derecha del número
-            long current = (n / factor) % 10; // Dígito actual
-            long higher = n / (factor * 10); // Parte izquierda del número
+            long lower = n % factor; // Right part of the number
+            long current = (n / factor) % 10; // Current digit
+            long higher = n / (factor * 10); // Left part of the number
             
             if (current == 0) {
                 count += higher * factor;
@@ -23,7 +23,7 @@ public class NumbersOfOnesv2 {
                 count += (higher + 1) * factor;
             }
 
-            factor *= 10; // Pasamos a la siguiente posición decimal
+            factor *= 10; // Move to the next decimal position
         }
 
         return count;

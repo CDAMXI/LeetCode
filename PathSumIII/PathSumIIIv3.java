@@ -46,7 +46,7 @@ public class PathSumIIIv3 {
             return null;
         }
 
-        // Crear el nodo raíz
+        // Create the root node
         TreeNode root = new TreeNode(nodes[0]);
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
@@ -55,14 +55,14 @@ public class PathSumIIIv3 {
         while (!queue.isEmpty() && i < nodes.length) {
             TreeNode current = queue.poll();
 
-            // Agregar el hijo izquierdo
+            // Add the left child
             if (nodes[i] != null) {
                 current.left = new TreeNode(nodes[i]);
                 queue.add(current.left);
             }
             i++;
 
-            // Agregar el hijo derecho
+            // Add the right child
             if (i < nodes.length && nodes[i] != null) {
                 current.right = new TreeNode(nodes[i]);
                 queue.add(current.right);

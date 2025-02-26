@@ -26,19 +26,19 @@ public class PathSumIIIv1 {
             return;
         }
 
-        // Agregar el valor actual al camino
+        // Add the current value to the path
         currentPath.add(node.val);
 
-        // Verificar si estamos en una hoja y el camino suma el targetSum
+        // Verify if we are in a leaf and the path sums the targetSum
         if (node.left == null && node.right == null && targetSum == node.val) {
             result.add(new ArrayList<>(currentPath)); // Agregar una copia del camino actual al resultado
         } else {
-            // Continuar explorando los hijos
+            // Continue exploring the children
             findPaths(node.left, targetSum - node.val, currentPath, result);
             findPaths(node.right, targetSum - node.val, currentPath, result);
         }
 
-        // Retroceder: eliminar el nodo actual del camino
+        // Backtrack: remove the current node from the path
         currentPath.remove(currentPath.size() - 1);
     }
 
@@ -47,7 +47,7 @@ public class PathSumIIIv1 {
             return null;
         }
 
-        // Crear el nodo raíz
+        // Create the root node
         TreeNode root = new TreeNode(nodes[0]);
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
@@ -56,14 +56,14 @@ public class PathSumIIIv1 {
         while (!queue.isEmpty() && i < nodes.length) {
             TreeNode current = queue.poll();
 
-            // Agregar el hijo izquierdo
+            // Add the left child
             if (nodes[i] != null) {
                 current.left = new TreeNode(nodes[i]);
                 queue.add(current.left);
             }
             i++;
 
-            // Agregar el hijo derecho
+            // Add the right child
             if (i < nodes.length && nodes[i] != null) {
                 current.right = new TreeNode(nodes[i]);
                 queue.add(current.right);

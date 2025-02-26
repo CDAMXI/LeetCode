@@ -14,7 +14,7 @@ public class PascalsTrianglev1 {
                 
                 if (rows <= 0) {
                     System.out.println("Please enter a positive integer.");
-                    continue; // Pedir nuevamente un valor válido
+                    continue; // Ask for a valid value again
                 }
 
                 List<List<Integer>> pascalTriangle = generate(rows);
@@ -22,45 +22,44 @@ public class PascalsTrianglev1 {
                     System.out.println(row);
                 }
 
-                isValid = true; // Se introduce un valor válido, salir del ciclo
+                isValid = true; // A valid value is entered, exit the loop
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a positive integer.");
-                kbd.next(); // Consumir el token inválido
+                kbd.next(); // Consume the invalid token
             }
         }
 
-        kbd.close(); // Cerrar el scanner al final
+        kbd.close(); // Close the scanner at the end
     }
 
     public static List<List<Integer>> generate(int numRows) {
-        List<List<Integer>> result = new ArrayList<>(); // Lista principal
+        List<List<Integer>> result = new ArrayList<>(); // Main list
     
-        if (numRows <= 0) {return result;} // Si no hay filas, retornar lista vacía
+        if (numRows <= 0) {return result;} // If there are no rows, return an empty list
     
-        // Primera fila de Pascal siempre es [1]
+        // The first row of Pascal's Triangle is always [1]
         result.add(new ArrayList<>(List.of(1)));
     
-        // Construir las filas desde la segunda hasta numRows
+        // Build rows from the second to numRows
         for (int i = 1; i < numRows; i++) {
-            List<Integer> prevRow = result.get(i - 1); // Fila anterior
+            List<Integer> prevRow = result.get(i - 1); // Previous row
             List<Integer> currentRow = new ArrayList<>();
     
-            // Primer elemento de cada fila es 1
+            // First element of each row is 1
             currentRow.add(1);
     
-            // Construir los elementos intermedios
+            // Build the intermediate elements
             for (int j = 1; j < prevRow.size(); j++) {
                 currentRow.add(prevRow.get(j - 1) + prevRow.get(j));
             }
     
-            // Último elemento de cada fila es 1
+            // Last element of each row is 1
             currentRow.add(1);
     
-            // Agregar la fila actual al resultado
+            // Add the current row to the result
             result.add(currentRow);
         }
     
         return result;
     }
-    
 }
