@@ -30,8 +30,8 @@ public class MergekSortedListsv2 {
     }
 
     private static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        ListNode dummy = new ListNode(0);  // Nodo dummy
-        ListNode pointer = dummy;
+        ListNode result = new ListNode(0);  // Nodo dummy
+        ListNode pointer = result;
 
         // Fusionar las listas reutilizando los nodos existentes
         while (list1 != null && list2 != null) {
@@ -48,7 +48,7 @@ public class MergekSortedListsv2 {
         // Conectar directamente el resto de la lista no vacía
         pointer.next = (list1 != null) ? list1 : list2;
 
-        return dummy.next;  // Saltar el nodo dummy
+        return result.next;  // Saltar el nodo result
     }
 
     public static void printList(ListNode node) {
