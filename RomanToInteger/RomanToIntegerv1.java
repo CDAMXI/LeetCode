@@ -52,7 +52,7 @@ public class RomanToIntegerv1 {
             char actual = s.charAt(pos);
             char siguiente = s.charAt(pos + 1);
     
-            // Obtener los valores numéricos de los caracteres romanos
+            // Get the numeric values of the Roman characters
             valorActual = valores.get(actual);
             valorSiguiente = valores.get(siguiente);
         }

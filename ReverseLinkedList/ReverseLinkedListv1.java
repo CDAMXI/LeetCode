@@ -55,14 +55,14 @@ public class ReverseLinkedListv1{
         return result.next;
     }
     
-    // Método para añadir un valor al final de un ListNode
+    // Method to append a value to the end of a ListNode
     public static void appendToEnd(ListNode head, int value) {
         ListNode newNode = new ListNode(value);
         
-        while (head.next != null) { // Recorrer hasta el último nodo
+        while (head.next != null) { // Go to the last node
             head = head.next;
         }
     
-        head.next = newNode; // Enlazar el nuevo nodo al final
+        head.next = newNode; // Add the new node to the end
     }
 }

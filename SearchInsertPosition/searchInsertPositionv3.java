@@ -11,18 +11,18 @@ public class searchInsertPositionv3 {
     public static int searchInsert(int[] nums, int target) {
         int left = 0, right = nums.length;
         
-        // Solo seguimos buscando mientras left < right
+        // Only keep searching while left < right
         while (left < right) {
             int mid = left + (right - left) / 2;
 
             if (nums[mid] < target) {
-                left = mid + 1;  // Descartamos la mitad izquierda
+                left = mid + 1;  // Reject the left half
             } else {
-                right = mid;  // Descartamos la mitad derecha
+                right = mid;  // Rejected the right half
             }
         }
 
-        // El índice de 'left' es la posición de inserción
+        // The index of 'left' is the insertion position
         return left;
     }
 }

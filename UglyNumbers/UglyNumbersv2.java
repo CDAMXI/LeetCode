@@ -9,9 +9,9 @@ public class UglyNumbersv2 {
     }
 
     public static boolean isUgly(int n) {
-        if (n <= 0){return false;} // Los números <= 0 no son feos
+        if (n <= 0){return false;} // Numbers <= 0 are not ugly
 
-        // Dividir n por 2, 3 y 5 hasta que ya no sea divisible por ellos
+        // Divide n by 2, 3, and 5 until it is no longer divisible by them
         int[] factors = {2, 3, 5};
         for (int factor : factors) {
             while (n % factor == 0) {
@@ -19,7 +19,7 @@ public class UglyNumbersv2 {
             }
         }
 
-        // Si después de eliminar los factores 2, 3 y 5 queda 1, es feo
+        // If after removing factors 2, 3, and 5 it is 1, it is ugly
         return n == 1;
     }
 }

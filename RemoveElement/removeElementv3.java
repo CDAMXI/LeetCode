@@ -12,7 +12,7 @@ public class removeElementv3 {
         }
         int k = 0;
         
-        // Mover los valores que no son iguales a `val` al principio del array
+        // Move the values that are not equal to `val` to the beginning of the array
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != val) {
                 nums[k] = nums[i];
@@ -20,11 +20,11 @@ public class removeElementv3 {
             }
         }
         
-        // Llenar los últimos `nums.length - k` elementos con ceros
+        // Fill the last `nums.length - k` elements with zeros
         for (int i = k; i < nums.length; i++) {
             nums[i] = 0;
         }
         
-        return k; // Retornar el número de elementos que no son iguales a `val`
+        return k; // Resturn the number of elements that are not equal to `val`
     }
 }

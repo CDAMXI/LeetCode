@@ -10,17 +10,17 @@ public class removeDuplicatesv2 {
     }
 
     public static int removeDuplicates(int[] nums) {
-        if (nums.length == 0) return 0; // Caso de borde: arreglo vacío
+        if (nums.length == 0) return 0; // Edge case: empty array
     
-        int k = 1; // Contador de elementos únicos, comenzamos con el primer elemento
+        int k = 1; // Counter of unique elements, we start with the first element
         for (int i = 1; i < nums.length; i++) {
-            // Si el número actual es diferente del último único encontrado
+            // If the current number is different from the last unique found
             if (nums[i] != nums[k - 1]) {
-                nums[k] = nums[i]; // Actualiza el siguiente lugar en nums
-                k++;               // Incrementa el contador
+                nums[k] = nums[i]; // Updates the next place in nums
+                k++;               // Increment the counter
             }
         }
-        return k; // Número de elementos únicos
+        return k; // Number of unique elements
     }
     
 }

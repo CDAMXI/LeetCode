@@ -19,7 +19,7 @@ public class singleNumberv1 {
 
         for (int key : map.keySet()) {
             if (map.get(key) == 1) {
-                return key; // Devolver la clave que tiene un valor de 1
+                return key; // Return the key that has a value of 1
             }
         }
         throw new IllegalArgumentException("No single number found"); 

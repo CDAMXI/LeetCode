@@ -17,13 +17,13 @@ public class ShortestPalindromev4 {
         String aux = "";
         String s1 = s;
 
-        // Encontrar el segmento más largo al principio que es palíndromo
+        // Find the longest segment at the beginning that is a palindrome
         while (!isPalindrome(s1)) {
-            aux = aux + s.charAt(s1.length() - 1); // Añadir el último carácter de s1 a aux
-            s1 = s1.substring(0, s1.length() - 1); // Reducir s1
+            aux = aux + s.charAt(s1.length() - 1); // Add the last character of s1 to aux
+            s1 = s1.substring(0, s1.length() - 1); // Reduce s1 by one character
         }
         
-        // Concatenar aux al inicio para formar el palíndromo más corto
+        // Concatenate aux at the beginning to form the shortest palindrome
         return aux + s;
     }
 
@@ -31,7 +31,7 @@ public class ShortestPalindromev4 {
         int i = 0, j = s.length() - 1;
 
         while (i < j) {
-            // Comparar caracteres directamente
+            // Compare characters directly
             if (s.charAt(i) != s.charAt(j)) {
                 return false;
             }

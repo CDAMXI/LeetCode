@@ -24,10 +24,10 @@ public class PowerOfThreev3 {
                     System.out.println(num + " is not a power of three.");
                 }
 
-                isValid = true; // Se introduce un valor válido, salir del ciclo
+                isValid = true; // A valid value is entered, exit the loop
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a positive integer.");
-                kbd.next(); // Consumir el token inválido
+                kbd.next(); // Consumes the invalid token
             }
         }
         kbd.close();

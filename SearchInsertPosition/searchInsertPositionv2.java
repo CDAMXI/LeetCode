@@ -12,18 +12,18 @@ public class searchInsertPositionv2 {
         int right = nums.length - 1;
 
         while (left <= right) {
-            int mid = left + (right - left) / 2; // Evitar overflow al calcular el medio
+            int mid = left + (right - left) / 2; // Avoid overflow when calculating the middle
 
             if (nums[mid] == target) {
-                return mid; // Elemento encontrado
+                return mid; // Element found
             } else if (nums[mid] < target) {
-                left = mid + 1; // Buscar en la mitad derecha
+                left = mid + 1; // Search in the right half
             } else {
-                right = mid - 1; // Buscar en la mitad izquierda
+                right = mid - 1; // Search in the left half
             }
         }
 
-        // Si no se encuentra, `left` será la posición de inserción
+        // If not found, `left` will be the insertion position
         return left;
     }
 }

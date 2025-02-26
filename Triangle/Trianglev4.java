@@ -16,7 +16,7 @@ public class Trianglev4 {
     public static int minimumTotal(List<List<Integer>> triangle) {
     int n = triangle.size();
 
-    // Accedemos directamente a los elementos para reducir llamadas a get()
+    // Access elements directly to reduce calls to get()
     for (int i = n - 2; i >= 0; i--) {  
         List<Integer> currentRow = triangle.get(i);
         List<Integer> nextRow = triangle.get(i + 1);

@@ -16,17 +16,17 @@ public class ShortestPalindromev6 {
         String reversed = new StringBuilder(s).reverse().toString();
         String combined = s + "#" + reversed;
 
-        // Calcular la tabla LPS
+        // Calculate the LPS table
         int[] lps = computeLPS(combined);
 
-        // Encontrar la longitud del prefijo palíndromo más largo
+        // Find the length of the longest palindrome prefix
         int longestPrefixPalindrome = lps[lps.length - 1];
 
-        // Sufijo que falta para hacer la cadena un palíndromo
+        // Sufix that is missing to make the string a palindrome
         String suffix = s.substring(longestPrefixPalindrome);
         StringBuilder prefix = new StringBuilder(suffix).reverse();
 
-        // Crear el palíndromo más corto
+        // Create the shortest palindrome
         return prefix + s;
     }
 

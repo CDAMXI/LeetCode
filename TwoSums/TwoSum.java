@@ -16,12 +16,12 @@ public class TwoSum {
                 if (nums[i] + nums[j] == target) {
                     result[0] = i;
                     result[1] = j;
-                    return result; // Sal del método cuando encuentres una solución
+                    return result; // Exit the method when you find a solution
                 }
             }
         }
 
-        // Lanza una excepción si no se encuentra una solución
+        // Throws an exception if no solution is found
         throw new IllegalArgumentException("No solution found");
     }
 }

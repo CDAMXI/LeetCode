@@ -14,9 +14,9 @@ public class RemoveDuplicatesFromListv3 {
         ListNode current = head;
         while (current.next != null) {
             if (current.val == current.next.val) {
-                current.next = current.next.next; // Salta el nodo duplicado
+                current.next = current.next.next; // Jumps the duplicate node
             } else {
-                current = current.next; // Avanza solo si no hay duplicado
+                current = current.next; // Goes to the next node only if there is no duplicate
             }
         }
         return head;

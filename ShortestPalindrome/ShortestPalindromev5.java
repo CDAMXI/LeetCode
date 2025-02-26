@@ -16,16 +16,16 @@ public class ShortestPalindromev5 {
         int n = s.length();
         int longestPrefixPalindrome = n - 1;
 
-        // Encontrar el índice más largo que forma un palíndromo
+        // Find the longest index that forms a palindrome
         while (longestPrefixPalindrome > 0 && !isPalindrome(s, 0, longestPrefixPalindrome)) {
             longestPrefixPalindrome--;
         }
 
-        // Construir el prefijo necesario para convertir en palíndromo
+        // Builder the prefix needed to convert into a palindrome
         StringBuilder prefix = new StringBuilder(s.substring(longestPrefixPalindrome + 1));
         prefix.reverse();
 
-        // Devolver el palíndromo más corto
+        // Return the shortest palindrome
         return prefix + s;
     }
 
@@ -44,7 +44,7 @@ public class ShortestPalindromev5 {
         int i = 0, j = s.length() - 1;
 
         while (i < j) {
-            // Comparar caracteres directamente
+            // Compare characters directly
             if (s.charAt(i) != s.charAt(j)) {
                 return false;
             }

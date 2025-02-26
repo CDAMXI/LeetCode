@@ -25,15 +25,15 @@ public class ShortestPalindromev1 {
         int i = 0, j = s.length() - 1;
         
         while (i < j) {
-            // Saltar caracteres no alfabéticos en la izquierda
+            // Avoid non-alphabetic characters on the left
             while (i < j && !Character.isLetterOrDigit(s.charAt(i))) {i++;}
-            // Saltar caracteres no alfabéticos en la derecha
+            // Avoid non-alphabetic characters on the right
             while (i < j && !Character.isLetterOrDigit(s.charAt(j))) {j--;}
 
-            // Comparar los caracteres restantes
+            // Compare the remaining characters
             if (s.charAt(i) != s.charAt(j)) {return false;}
 
-            // Avanzar ambos índices
+            // Increment both indexes
             i++;
             j--;
         }

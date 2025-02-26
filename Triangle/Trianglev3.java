@@ -16,7 +16,7 @@ public class Trianglev3 {
     public static int minimumTotal(List<List<Integer>> triangle) {
     int n = triangle.size();
 
-    // Modificamos la última fila directamente para ahorrar espacio
+    // Modify the last row directly to save space
     for (int i = n - 2; i >= 0; i--) {  
         for (int j = 0; j <= i; j++) {
             triangle.get(i).set(j, triangle.get(i).get(j) + 
@@ -24,7 +24,7 @@ public class Trianglev3 {
         }
     }
 
-    return triangle.get(0).get(0); // El resultado final estará en la cima del triángulo
+    return triangle.get(0).get(0); // The result will be at the top of the triangle
 }
 
 }

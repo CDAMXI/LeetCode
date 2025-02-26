@@ -8,11 +8,11 @@ public class singleNumberv2 {
     }
 
     public static int singleNumber(int[] nums) {
-        int result = 0; // Inicializamos el resultado con 0
+        int result = 0; //  Initialize the result with 0
         for (int num : nums) {
-            result ^= num; // Aplicamos XOR con cada número
+            result ^= num; // Apply XOR with each number
         }
-        return result; // El número único queda al final
+        return result; // The unique number remains at the end
     }
     
 }

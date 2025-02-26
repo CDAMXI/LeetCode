@@ -14,12 +14,12 @@ public class ReverseIntegerv2 {
         
         int reverse = 0;
         while (x != 0) {
-            // Comprobar si el siguiente paso causará un desbordamiento
+            // Make sure the next step will cause an overflow
             if (reverse > Integer.MAX_VALUE / 10 || (reverse == Integer.MAX_VALUE / 10 && x % 10 > 7)) {
-                return 0;  // Devuelve 0 si hay un desbordamiento
+                return 0;  // Return 0 if there is an overflow
             }
             if (reverse < Integer.MIN_VALUE / 10 || (reverse == Integer.MIN_VALUE / 10 && x % 10 > 7)) {
-                return 0;  // Devuelve 0 si hay un desbordamiento
+                return 0;  // Return 0 if there is an overflow
             }
             
             reverse = reverse * 10 + x % 10;

@@ -12,20 +12,20 @@ public class ValidParenthesesv2 {
     }
 
     public static boolean isValid(String s) {
-    // Usar una pila para hacer seguimiento de los paréntesis abiertos
+    // Use a stack to keep track of open parentheses
     Stack<Character> stack = new Stack<>();
 
     for (int i = 0; i < s.length(); i++) {
         char c = s.charAt(i);
-        // Insertar en la pila cuando hay un paréntesis de apertura
+        // Insert into stack when there is an opening parenthesis
         if (c == '(' || c == '[' || c == '{') {
             stack.push(c);
         } else {
-            // Verificar si la pila está vacía antes de intentar hacer pop
+            // Verify if the stack is empty before attempting to pop
             if (stack.isEmpty()) {
                 return false;
             }
-            // Comprobar si el paréntesis de cierre coincide con el del tope de la pila
+            // Check if the closing parenthesis matches the one at the top of the stack
             char top = stack.pop();
             if ((c == ')' && top != '(') ||
                 (c == ']' && top != '[') ||
@@ -34,7 +34,7 @@ public class ValidParenthesesv2 {
             }
         }
     }
-    // La pila debe estar vacía si la secuencia es válida
+    // The stack should be empty if the sequence is valid
     return stack.isEmpty();
 }
 

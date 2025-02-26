@@ -11,7 +11,7 @@ public class removeElementv1 {
         int a = 0, k = 0;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == val) {
-                nums[a] = nums[i]; // Actualiza el siguiente lugar en nums
+                nums[a] = nums[i]; // Update the next place in nums
                 a++;
             } else{k++;}
         }
@@ -19,12 +19,12 @@ public class removeElementv1 {
         System.out.print("[");
         for (int i = 0; i < nums.length; i++) {
             if (i == nums.length - 1) {
-                System.out.print(nums[i]); // Último elemento, sin coma
+                System.out.print(nums[i]); // Last element, without comma
             } else {
-                System.out.print(nums[i] + ","); // Elementos intermedios con coma
+                System.out.print(nums[i] + ","); // Intermidiate elements with comma
             }
         }
-        System.out.println("]"); // Cierre del formato
+        System.out.println("]"); // Close format
 
         return k;
     }
