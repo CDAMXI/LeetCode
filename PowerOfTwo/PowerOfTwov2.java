@@ -15,7 +15,7 @@ public class PowerOfTwov2 {
                 
                 if (num <= 0) {
                     System.out.println("Please enter a positive integer.");
-                    continue; // Pedir nuevamente un valor válido
+                    continue; // Ask for a valid value again
                 }
 
                 if (isPowerOfTwo(num)) {
@@ -24,10 +24,10 @@ public class PowerOfTwov2 {
                     System.out.println(num + " is not a power of two.");
                 }
 
-                isValid = true; // Se introduce un valor válido, salir del ciclo
+                isValid = true; // A valid value is entered, exit the loop
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a positive integer.");
-                kbd.next(); // Consumir el token inválido
+                kbd.next(); // Consume the invalid token
             }
         }
         kbd.close();

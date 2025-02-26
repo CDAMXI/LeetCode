@@ -15,7 +15,7 @@ public class PowerOfThreev3 {
                 
                 if (num <= 0) {
                     System.out.println("Please enter a positive integer.");
-                    continue; // Pedir nuevamente un valor válido
+                    continue; // Ask for a valid value again
                 }
 
                 if (isPowerOfThree(num)) {

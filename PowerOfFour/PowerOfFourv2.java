@@ -15,7 +15,7 @@ public class PowerOfFourv2 {
                 
                 if (num <= 0) {
                     System.out.println("Please enter a positive integer.");
-                    continue; // Pedir nuevamente un valor válido
+                    continue; // Ask for a valid value again
                 }
 
                 if (isPowerOfFour(num)) {
@@ -24,17 +24,17 @@ public class PowerOfFourv2 {
                     System.out.println(num + " is not a power of four.");
                 }
 
-                isValid = true; // Se introduce un valor válido, salir del ciclo
+                isValid = true; // A valid value is entered, exit the loop
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a positive integer.");
-                kbd.next(); // Consumir el token inválido
+                kbd.next(); // Consume invalid token
             }
         }
         kbd.close();
     }
 
     public static boolean isPowerOfFour(int n) {
-        // n debe ser mayor que 0 y debe ser divisible por 4 hasta que se convierta en 1
+        // n must be greater than 0 and must be divisible by 4 until it becomes 1
         if (n <= 0) {return false;}
     
         while (n % 4 == 0) {n /= 4;}
