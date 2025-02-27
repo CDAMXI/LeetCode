@@ -1,10 +1,32 @@
+import java.util.Scanner;
+
 public class IntegerToRomanv2 {
     public static void main(String[] args) {
-        System.out.println("Result: " + intToRoman(3749)); // MMMDCCXLIX
-        System.out.println("Result: " + intToRoman(58));   // LVIII
-        System.out.println("Result: " + intToRoman(1));    // I
-        System.out.println("Result: " + intToRoman(3999)); // MMMCMXCIX
-        System.out.println("Result: " + intToRoman(3998)); // MMMCMXCVIII
+        Scanner kbd = new Scanner(System.in);
+        int value = 0;
+        boolean isValid = false;
+        do {
+            try {
+                System.out.print("Enter a number: ");
+                value = kbd.nextInt();
+                if (value > 0) {
+                    isValid = true;
+                } else {
+                    System.out.println("Invalid input. Please enter a number greater than 0.");
+                }
+            } catch (Exception e) {
+                System.out.println("Invalid input. Please enter a number.");
+                kbd.next();
+            }
+        } while (!isValid);
+
+        System.out.println(value + " in Roman Numerals is: " + intToRoman(value));
+        kbd.close();
+        //System.out.println("Result: " + intToRoman(3749)); // MMMDCCXLIX
+        //System.out.println("Result: " + intToRoman(58));   // LVIII
+        //System.out.println("Result: " + intToRoman(1));    // I
+        //System.out.println("Result: " + intToRoman(3999)); // MMMCMXCIX
+        //System.out.println("Result: " + intToRoman(3998)); // MMMCMXCVIII
     }
 
     public static String intToRoman(int num) {
