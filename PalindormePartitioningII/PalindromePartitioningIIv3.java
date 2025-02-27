@@ -7,6 +7,8 @@ public class PalindromePartitioningIIv3 {
         System.out.println(minCut("ab"));     // Output: 1
         System.out.println(minCut("bb"));    // Output: 0
         System.out.println(minCut("abbab"));  // Output: 1
+        System.out.println(minCut("abcba"));  // Output: 0
+        System.out.println(minCut("abacaba"));  // Output: 0
     }
 
     /**
