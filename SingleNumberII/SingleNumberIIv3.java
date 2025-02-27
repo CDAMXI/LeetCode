@@ -3,6 +3,9 @@ public class SingleNumberIIv3 {
         System.out.println(singleNumber(new int[]{2, 2, 3, 2})); // Output: 3
         System.out.println(singleNumber(new int[]{0, 1, 0, 1, 0, 1, 99})); // Output: 99
         System.out.println(singleNumber(new int[]{30000, 500, 100, 30000, 100, 30000, 100})); // Output: 500
+        System.out.println(singleNumber(new int[]{1, 1, 1, 2})); // Output: 2
+        System.out.println(singleNumber(new int[]{1, 1, 1, 3})); // Output: 3
+        System.out.println(singleNumber(new int[]{1, 1, 1, 3, 3, 3,1, 1, 1, 3, 3, 3,1, 1, 1, 3, 3, 3, 2})); // Output: 2
     }
 
     public static int singleNumber(int[] nums) {
