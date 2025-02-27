@@ -1,5 +1,4 @@
 package FirstMissingPositive;
-
 public class FirstMissingPositivev2 {
     public static void main(String[] args) {
         System.out.println(FirstMissingPositiveNum(new int[] {1, 2, 0}));         // Output: 3
