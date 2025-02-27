@@ -4,29 +4,32 @@ public class IntegerToRomanv2 {
     public static void main(String[] args) {
         Scanner kbd = new Scanner(System.in);
         int value = 0;
-        boolean isValid = false;
-        do {
+        String input;
+
+        while (true) {
+            System.out.print("Enter a number (or 'quit' to exit): ");
+            input = kbd.nextLine().trim().toLowerCase(); // Lee la entrada y la convierte a minúsculas
+
+            // Verifica si el usuario quiere salir
+            if (input.equals("quit")) {
+                System.out.println("Exiting the program. Goodbye!");
+                break;
+            }
+
             try {
-                System.out.print("Enter a number: ");
-                value = kbd.nextInt();
+                // Intenta convertir la entrada a un número
+                value = Integer.parseInt(input);
                 if (value > 0) {
-                    isValid = true;
+                    System.out.println(value + " in Roman Numerals is: " + intToRoman(value));
                 } else {
                     System.out.println("Invalid input. Please enter a number greater than 0.");
                 }
-            } catch (Exception e) {
-                System.out.println("Invalid input. Please enter a number.");
-                kbd.next();
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input. Please enter a valid number or 'quit' to exit.");
             }
-        } while (!isValid);
+        }
 
-        System.out.println(value + " in Roman Numerals is: " + intToRoman(value));
         kbd.close();
-        //System.out.println("Result: " + intToRoman(3749)); // MMMDCCXLIX
-        //System.out.println("Result: " + intToRoman(58));   // LVIII
-        //System.out.println("Result: " + intToRoman(1));    // I
-        //System.out.println("Result: " + intToRoman(3999)); // MMMCMXCIX
-        //System.out.println("Result: " + intToRoman(3998)); // MMMCMXCVIII
     }
 
     public static String intToRoman(int num) {
@@ -48,5 +51,3 @@ public class IntegerToRomanv2 {
         return result.toString();
     }
 }
-// Time Complexity: O(1) since the number of Roman symbols is constant
-// Space Complexity: O(1) since the number of Roman symbols is constant
