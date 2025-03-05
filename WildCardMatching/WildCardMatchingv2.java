@@ -31,9 +31,7 @@ public class WildCardMatchingv2 {
                 sIndex = matchIndex;
             }
             // If none of the above conditions are met, the pattern does not match
-            else {
-                return false;
-            }
+            else {return false;}
         }
 
         // After processing the string, check if the remaining pattern characters are all '*'
