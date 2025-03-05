@@ -3,6 +3,8 @@ public class WildCardMatchingv2 {
         System.out.println(isMatch("aa", "a")); // false
         System.out.println(isMatch("aa", "*")); // true
         System.out.println(isMatch("adceb", "*a*b")); // true
+        System.out.println(isMatch("acdcb", "a*c?b")); // false
+        System.out.println(isMatch("aab", "c*a*b")); // false
     }
 
     public static boolean isMatch(String s, String p) {
