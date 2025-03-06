@@ -18,15 +18,15 @@ public class SumRoottoLeafNumbersv2 {
             return 0;
         }
         
-        // Calcula el valor acumulado hasta el nodo actual
+        // Calculating the accumulated value up to the current node
         sum = sum * 10 + root.val;
         
-        // Si es un nodo hoja, devuelve el valor acumulado
+        // If it is a leaf node, return the accumulated value
         if (root.left == null && root.right == null) {
             return sum;
         }
         
-        // Recursivamente suma los valores de los subárboles izquierdo y derecho
+        // Add recursively the values of the left and right subtrees
         return dfs(root.left, sum) + dfs(root.right, sum);
     }
 }
