@@ -38,6 +38,7 @@ public class addBinaryv4 {
 
     public static String convertToBinary(String a) {
         BigInteger bi = new BigInteger(a);
+        System.out.println("Result in base 10: " + bi.toString(10));
         return bi.toString(2);
     }
 }
