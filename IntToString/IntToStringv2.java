@@ -8,6 +8,8 @@ public class IntToStringv2 {
         System.out.println(numbersToWords(12345)); // twelve Thousand "); three hundred Forty-Five
         System.out.println(numbersToWords(1234567)); // one million two hundred thirty-Four Thousand "); Five hundred sixty-seven
         System.out.println(numbersToWords(1234567890)); // one Billion two hundred thirty-Four million Five hundred sixty-seven Thousand "); eight hundred ninety
+        System.out.println(numbersToWords(999999999)); // nine hundred ninety-nine million nine hundred ninety-nine Thousand "); nine hundred ninety-nine
+        System.out.println(numbersToWords(1000000000)); // one Billion
     }
 
     public static String numbersToWords(int num) {
@@ -20,33 +22,37 @@ public class IntToStringv2 {
     }
 
     private static void convertChunk(int num, StringBuilder result) {
-        if (num >= 1_000_000_000) {
-            convertChunk(num / 1_000_000_000, result);
-            result.append("Billion ");
-            num %= 1_000_000_000;
-        }
-        if (num >= 1_000_000) {
-            convertChunk(num / 1_000_000, result);
-            result.append("Million ");
-            num %= 1_000_000;
-        }
-        if (num >= 1000) {
-            convertChunk(num / 1000, result);
-            result.append("Thousand ");
-            num %= 1000;
-        }
-        if (num >= 100) {
-            result.append(units[num / 100]).append(" Hundred ");
-            num %= 100;
-        }
-        if (num >= 20) {
-            result.append(tens[num / 10]).append(" ");
-            num %= 10;
-        }
-        if (num >= 10) {
-            result.append(teens[num - 10]).append(" ");
-        } else if (num > 0) {
-            result.append(units[num]).append(" ");
+        try {
+            if (num >= 1_000_000_000) {
+                convertChunk(num / 1_000_000_000, result);
+                result.append("Billion ");
+                num %= 1_000_000_000;
+            }
+            if (num >= 1_000_000) {
+                convertChunk(num / 1_000_000, result);
+                result.append("Million ");
+                num %= 1_000_000;
+            }
+            if (num >= 1000) {
+                convertChunk(num / 1000, result);
+                result.append("Thousand ");
+                num %= 1000;
+            }
+            if (num >= 100) {
+                result.append(units[num / 100]).append(" Hundred ");
+                num %= 100;
+            }
+            if (num >= 20) {
+                result.append(tens[num / 10]).append(" ");
+                num %= 10;
+            }
+            if (num >= 10) {
+                result.append(teens[num - 10]).append(" ");
+            } else if (num > 0) {
+                result.append(units[num]).append(" ");
+            }
+        } catch (Exception e) {
+            result.append("Number out of range");
         }
     }
 }
