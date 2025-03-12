@@ -9,9 +9,7 @@ public class RemoveNthNodeFromListv2 {
     }
 
     public static ListNode removeNthFromEnd(ListNode head, int n) {
-        if (head == null || n <= 0) {
-            return head;
-        }
+        if (head == null || n <= 0) {return head;}
 
         // Use of a dummy node to handle special cases (deleting the first node)
         ListNode dummy = new ListNode(0);
@@ -24,7 +22,7 @@ public class RemoveNthNodeFromListv2 {
         // Mover fast n+1 pasos adelante
         for (int i = 0; i <= n; i++) {
             if (fast == null) {
-                return head; // n es mayor que la longitud de la lista
+                return head; // n is bigger than the length of the list
             }
             fast = fast.next;
         }
