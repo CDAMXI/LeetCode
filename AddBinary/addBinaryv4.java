@@ -8,12 +8,12 @@ public class addBinaryv4 {
         Scanner kbd = new Scanner(System.in);
         String a, b;
         do {
-            System.out.print("Enter the first value: ");
+            System.out.print("Enter the first value in binary: ");
             a = kbd.next();
         } while (!a.chars().allMatch(Character::isDigit)); // Lambda expressions are being used
 
         do {
-            System.out.print("Enter the second value: ");
+            System.out.print("Enter the second value in binary: ");
             b = kbd.next();
         } while (!b.chars().allMatch(Character::isDigit)); // Lambda expressions are being used
 
