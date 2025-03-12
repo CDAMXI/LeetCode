@@ -10,6 +10,9 @@ public class IntToStringv2 {
         System.out.println(numbersToWords(1234567890)); // one Billion two hundred thirty-Four million Five hundred sixty-seven Thousand "); eight hundred ninety
         System.out.println(numbersToWords(999999999)); // nine hundred ninety-nine million nine hundred ninety-nine Thousand "); nine hundred ninety-nine
         System.out.println(numbersToWords(1000000000)); // one Billion
+        System.out.println(numbersToWords(1000000001)); // one Billion one
+        System.out.println(numbersToWords(-1000000001)); // negative one Billion one
+        System.out.println(numbersToWords(-1)); // negative one
     }
 
     public static String numbersToWords(int num) {
@@ -23,6 +26,11 @@ public class IntToStringv2 {
 
     private static void convertChunk(int num, StringBuilder result) {
         try {
+            if (num < 0) {
+                result.append("Negative ");
+                num *= -1;
+                
+            }
             if (num >= 1_000_000_000) {
                 convertChunk(num / 1_000_000_000, result);
                 result.append("Billion ");
