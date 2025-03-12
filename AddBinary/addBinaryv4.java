@@ -30,7 +30,8 @@ public class addBinaryv4 {
         // Add the values
         BigInteger result = new BigInteger(a, 2).add(new BigInteger(b, 2));
         // When creating the BigInteger, the 2 passed as a parameter will convert the value to binary
-        
+
+        System.out.println("Result in base 10: " + result.toString(10));
         // Convert the result back to binary
         return result.toString(2);
         // Converts result to a string composed of characters corresponding to binary values

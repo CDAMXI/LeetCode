@@ -14,6 +14,7 @@ public class AddTwoNumbersv2 {
 
         // Print the sum result
         ListNode result = addTwoNumbers(l1, l2);
+        System.out.println("Result of adding the two numbers (read left to right):");
         printList(result);
     }
 
