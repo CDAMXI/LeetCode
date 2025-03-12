@@ -31,6 +31,7 @@ public class addBinaryv4 {
         BigInteger result = new BigInteger(a, 2).add(new BigInteger(b, 2));
         // When creating the BigInteger, the 2 passed as a parameter will convert the value to binary
 
+        System.out.println("Result in base 10: " + result.toString(10));
         // Convert the result back to binary
         return result.toString(2);
         // Converts result to a string composed of characters corresponding to binary values
@@ -38,7 +39,6 @@ public class addBinaryv4 {
 
     public static String convertToBinary(String a) {
         BigInteger bi = new BigInteger(a);
-        System.out.println("Result in base 10: " + bi.toString(10));
         return bi.toString(2);
     }
 }
