@@ -9,17 +9,17 @@ public class IntToStringv2 {
         Scanner kbd = new Scanner(System.in);
         int num = 0;
         boolean isNumber = false;
-        do{
-            try{
+        do {
+            try {
                 System.out.print("Enter a number: ");
                 num = Integer.parseInt(kbd.nextLine());
                 System.out.println("Result: " + numbersToWords(num));
                 isNumber = true;
-            }catch(NumberFormatException e){
+            } catch (NumberFormatException e) {
                 System.out.println("Invalid number. Try again.");
-                kbd.next();
             }
-        }while(!isNumber);
+        } while (!isNumber);
+        
         kbd.close();
     }
 
