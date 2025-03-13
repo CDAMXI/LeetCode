@@ -4,17 +4,20 @@ public class IntToStringv2 {
     private static final String[] tens = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
 
     public static void main(String[] args) {
-        Scanner kbd = new Scanner(System.in());
+        Scanner kbd = new Scanner(System.in);
         int num = 0;
-        boolean isNumber = true;
+        boolean isNumber = false;
         do{
             try{
-                System.out.print("Give me a number: ");
-                num = kbd.nextInt();
-            }catch(Exception e){isNumber = false;}                
+                System.out.print("Enter a number: ");
+                num = Integer.parseInt(kbd.nextLine());
+                System.out.println("Result: " + numbersToWords(num));
+                isNumber = true;
+            }catch(NumberFormatException e){
+                System.out.println("Invalid number. Try again.");
+                kbd.next();
+            }
         }while(!isNumber);
-        System.out.println("Number: " + num);
-        System.out.println("Words: " + numbersToWords(num));
     }
 
     public static String numbersToWords(int num) {
