@@ -4,15 +4,17 @@ public class IntToStringv2 {
     private static final String[] tens = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
 
     public static void main(String[] args) {
-        System.out.println(numbersToWords(123)); // one hundred twenty-three
-        System.out.println(numbersToWords(12345)); // twelve Thousand "); three hundred Forty-Five
-        System.out.println(numbersToWords(1234567)); // one million two hundred thirty-Four Thousand "); Five hundred sixty-seven
-        System.out.println(numbersToWords(1234567890)); // one Billion two hundred thirty-Four million Five hundred sixty-seven Thousand "); eight hundred ninety
-        System.out.println(numbersToWords(999999999)); // nine hundred ninety-nine million nine hundred ninety-nine Thousand "); nine hundred ninety-nine
-        System.out.println(numbersToWords(1000000000)); // one Billion
-        System.out.println(numbersToWords(1000000001)); // one Billion one
-        System.out.println(numbersToWords(-1000000001)); // negative one Billion one
-        System.out.println(numbersToWords(-1)); // negative one
+        Scanner kbd = new Scanner(System.in());
+        int num = 0;
+        boolean isNumber = true;
+        do{
+            try{
+                System.out.print("Give me a number: ");
+                num = kbd.nextInt();
+            }catch(Exception e){isNumber = false;}                
+        }while(!isNumber);
+        System.out.println("Number: " + num);
+        System.out.println("Words: " + numbersToWords(num));
     }
 
     public static String numbersToWords(int num) {
