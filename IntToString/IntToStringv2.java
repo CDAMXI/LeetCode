@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class IntToStringv2 {
     private static final String[] units = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
     private static final String[] teens = {"Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
@@ -18,6 +20,7 @@ public class IntToStringv2 {
                 kbd.next();
             }
         }while(!isNumber);
+        kbd.close();
     }
 
     public static String numbersToWords(int num) {
