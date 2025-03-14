@@ -13,17 +13,17 @@ public class ContainsDuplicatesIIIv5 {
         }
 
         Map<Long, Integer> buckets = new HashMap<>();
-        long bucketSize = (long) valueDiff + 1; // Tamaño de cada bucket
+        long bucketSize = (long) valueDiff + 1; // Size of each Bucket
 
         for (int i = 0; i < nums.length; i++) {
             long bucketId = getBucketId(nums[i], bucketSize);
 
-            // Si el bucket actual ya tiene un número con diferencia ≤ valueDiff
+            // If the current bucket already has a number with difference ≤ valueDiff
             if (buckets.containsKey(bucketId)) {
                 return true;
             }
 
-            // Revisar buckets vecinos (izquierda y derecha) comparando valores
+            // Check neighboring buckets (left and right) comparing values
             if (buckets.containsKey(bucketId - 1) && Math.abs((long) nums[i] - buckets.get(bucketId - 1)) <= valueDiff) {
                 return true;
             }
@@ -31,10 +31,10 @@ public class ContainsDuplicatesIIIv5 {
                 return true;
             }
 
-            // Agregar el número actual en su bucket correspondiente
+            // Add the current number to its corresponding bucket
             buckets.put(bucketId, nums[i]);
 
-            // Mantener solo indexDiff elementos en memoria
+            // Maintain only indexDiff elements in memory
             if (i >= indexDiff) {
                 buckets.remove(getBucketId(nums[i - indexDiff], bucketSize));
             }
