@@ -20,7 +20,7 @@ public class PermutationsIIv2 {
         }
 
         for (int i = 0; i < nums.length; i++) {
-            // Evita duplicados
+            // Avoids duplicates
             if (used[i] || (i > 0 && nums[i] == nums[i - 1] && !used[i - 1])) {
                 continue;
             }
