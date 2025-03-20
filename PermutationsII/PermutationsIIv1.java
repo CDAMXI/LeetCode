@@ -1,8 +1,8 @@
 import java.util.*;
 
-public class Permutationsv3 {
+public class PermutationsIIv1 {
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3};
+        int[] nums = {1,1,2};
         System.out.println(permute(nums));
     }
 
@@ -13,7 +13,7 @@ public class Permutationsv3 {
     }
 
     public static void backtrack(List<List<Integer>> result, List<Integer> list, int[] nums, boolean[] used) {
-        if (list.size() == nums.length) {
+        if (list.size() == nums.length && !result.contains(list)) {
             result.add(new ArrayList<>(list)); // Adds a copy of the current list
             return;
         }
@@ -23,7 +23,7 @@ public class Permutationsv3 {
             used[i] = true; // Marcs the element as used
             list.add(nums[i]); // Adds the element to the current permutation
             backtrack(result, list, nums, used); // Recusive call
-            list.remove(list.size() - 1); // Removes the last element (backtrack)
+            list.remove(list.size() - 1); // Removes the last  (backtrack)
             used[i] = false; // Unmarcks the element to allow its use in other permutations
         }
     }
