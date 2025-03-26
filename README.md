@@ -40,6 +40,6 @@ Each solution includes all the necessary classes to compile it as a standalone p
 - Improve the efficiency of existing solutions.
 
 ## Notes
-- All exercises include example test cases in the main method.
-- All common data structures are located in ```srccode``` folder.
-- Some of these attempts may not fully work due to limitations with their approach. I was unable to find a consistently working solution for them. However, the last approach works 100% off the time. Contributions & suggestions for improvements are welcome!
+- 🚨 All common data structures are located in ```srccode``` folder.
+- ⚠️ Some of these attempts may not fully work due to limitations with their approach. I was unable to find a consistently working solution for them. However, the last approach works 100% off the time. Contributions & suggestions for improvements are welcome!
+- 🧪 All exercises include example test cases in the main method.
