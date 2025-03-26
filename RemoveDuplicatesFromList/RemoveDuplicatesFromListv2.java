@@ -1,5 +1,7 @@
 package RemoveDuplicatesFromList;
 
+import srccode.*;
+
 public class RemoveDuplicatesFromListv2 {
     public static void main(String[] args) {
         ListNode list = new ListNode(1);

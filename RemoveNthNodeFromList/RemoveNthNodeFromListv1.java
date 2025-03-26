@@ -1,5 +1,7 @@
 package RemoveNthNodeFromList;
 
+import srccode.*;
+
 public class RemoveNthNodeFromListv1 {
     public static void main(String[] args) {
         printListNode(removeNthFromEnd(arrayToListNode(new int[]{1,2,3,4,5}), 2));
