@@ -9,6 +9,7 @@ This repository contains all the solutions I have developed for LeetCode problem
 
 - **📂 Folders by Category**: Problems are organized into folders by category for easy navigation.
 - **📄 Descriptive File Names**: Each code file is named after the problem's title and its corresponding version.
+- **🗂️ Common Data Structures**: All common data structures are located in ```srccode``` folder.
 
 ## Example Solution
 ```java
@@ -40,6 +41,5 @@ Each solution includes all the necessary classes to compile it as a standalone p
 - Improve the efficiency of existing solutions.
 
 ## Notes
-- 🚨 All common data structures are located in ```srccode``` folder.
 - ⚠️ Some of these attempts may not fully work due to limitations with their approach. I was unable to find a consistently working solution for them. However, the last approach works 100% off the time. Contributions & suggestions for improvements are welcome!
 - 🧪 All exercises include example test cases in the main method.
