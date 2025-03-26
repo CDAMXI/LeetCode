@@ -42,6 +42,6 @@ Each solution includes all the necessary classes to compile it as a standalone p
 
 ## Notes on Solution Quality:
 - ⚠️ Earlier attempts may have edge-case failures due to approach limitations.
-- ✅ Final marked solution (v2+) is fully tested and reliable.
+- ✅ v2+ (Final) → Fully tested & reliable. (Highest version number = most optimized!)
 - 🛠️ Contributions welcome! Open to optimizations or alternative approaches.
 - 🧪 All exercises include example test cases in the main method.
