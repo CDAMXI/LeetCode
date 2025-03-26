@@ -40,6 +40,8 @@ Each solution includes all the necessary classes to compile it as a standalone p
 - Continue adding solutions to new problems.
 - Improve the efficiency of existing solutions.
 
-## Notes
-- ⚠️ Some of these attempts may not fully work due to limitations with their approach. I was unable to find a consistently working solution for them. However, the last approach works 100% off the time. Contributions & suggestions for improvements are welcome!
+## Notes on Solution Quality:
+- ⚠️ Earlier attempts may have edge-case failures due to approach limitations.
+- ✅ Final marked solution (v2+) is fully tested and reliable.
+- 🛠️ Contributions welcome! Open to optimizations or alternative approaches.
 - 🧪 All exercises include example test cases in the main method.
