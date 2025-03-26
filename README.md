@@ -32,7 +32,7 @@ public class ExampleProblem {
 ```
 
 ## How to Compile and Run
-Each solution includes all the necessary classes to compile it as a standalone program. To run a solution:
+Each solution includes all the necessary classes to compile it as a standalone program. To run a solution using the terminal:
 1. Compile the file using ```javac FileName.java```.
 2. Run the compiled file with ```java FileName```.
 
