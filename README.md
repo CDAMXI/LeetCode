@@ -49,3 +49,4 @@ Each solution includes all the necessary classes to compile it as a standalone p
 ##Side Notes
 - 📌 Some problems are inspired by real-world needs or common programming exercises and may not exist as standalone LeetCode problems. Said exercises are:
     - "IntegerToBinary"
+    - "BinaryToInteger"
