@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 
 public class mergeIntervalsv3 {
     public static void main(String[] args) {
