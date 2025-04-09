@@ -14,5 +14,6 @@ public class IntegerToBinaryv1{
                 System.out.println("Please enter a positive integer.");
             }
         } while(!(n < 0));
+        kbd.close();
     }
 }
