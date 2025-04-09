@@ -45,3 +45,6 @@ Each solution includes all the necessary classes to compile it as a standalone p
 - ✅ v2+ (Final) → Fully tested & reliable. (Highest version number = most optimized!)
 - 🛠️ Contributions welcome! Open to optimizations or alternative approaches.
 - 🧪 All exercises include example test cases in the main method.
+
+##Side Notes
+- Some problems are my own, and cannot be found on the LeetCode website.
