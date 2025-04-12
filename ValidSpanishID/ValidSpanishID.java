@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class ValidSpanishID{
     public static void main(String[] args) {
         Scanner kbd = new Scanner(System.in);
@@ -9,6 +11,7 @@ public class ValidSpanishID{
             }
             System.out.println(isValidSpanishID(id)); // Output: true or false based on validity
         }
+        kbd.close(); // Close the scanner to prevent resource leaks
     }
 
     public static boolean isValidSpanishID(String id){
