@@ -1,7 +1,14 @@
 public class ValidSpanishID{
     public static void main(String[] args) {
-        String id = "12345678Z"; // Example ID
-        System.out.println(isValidSpanishID(id)); // Output: true or false based on validity
+        Scanner kbd = new Scanner(System.in);
+        while(true){
+            System.out.print("Enter a Spanish ID (or 'exit' to quit): ");
+            String id = kbd.nextLine();
+            if (id.equalsIgnoreCase("exit")) {
+                break; // Exit the loop if user types 'exit'
+            }
+            System.out.println(isValidSpanishID(id)); // Output: true or false based on validity
+        }
     }
 
     public static boolean isValidSpanishID(String id){
