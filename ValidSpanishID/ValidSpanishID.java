@@ -38,4 +38,10 @@ public class ValidSpanishID{
 
         return letterPart == expectedLetter; // Return true if they match, false otherwise
     }
+
+    private static char calculateLetter(int number) {
+        // Calculate the letter based on the number using the formula
+        String letters = "TRWAGMYFPDXBNJZSQVHLCKE"; // Letters corresponding to the remainders
+        return letters.charAt(number % 23); // Return the letter based on the remainder of division by 23
+    }
 }
