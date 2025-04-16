@@ -1,4 +1,4 @@
-import java.util.Stack;
+import java.util.*;
 
 public class LongestValidParenthesesv1{
     public static void main(String[] args){
