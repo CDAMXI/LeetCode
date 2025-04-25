@@ -26,7 +26,7 @@ while True:
         n = int(input("Enter a non-negative integer (or -1 to exit): "))
         if n == -1:
             break
-        print(f"Binary representation of {n} is: {IntegerToBinary(n)}")
+        print(f"Binary representation of {n} is: {IntegerToBinary(n)}, and the length is {len(IntegerToBinary(n))} bits")
     except ValueError as e:
         print(e)
     except Exception as e:
