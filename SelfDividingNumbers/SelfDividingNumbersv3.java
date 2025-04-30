@@ -9,7 +9,7 @@ public class SelfDividingNumbersv3 {
     }
 
     public static List<Integer> selfDividingNumbers(int left, int right) {
-        List<Integer> result = new ArrayList<>((right-left)/2); // Capacidad inicial optimizada
+        List<Integer> result = new ArrayList<>((right-left)/2); // Initial capacity optimized
         
         for (int i = left; i <= right; i++) {
             if (isSelfDividingUltra(i)) {
