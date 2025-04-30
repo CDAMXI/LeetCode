@@ -23,7 +23,7 @@ public class SelfDividingNumbersv2 {
     public static boolean isSelfDividingOptimized(int num) {
         String s = Integer.toString(num);
         
-        // Si el número contiene '0', descartarlo inmediatamente
+        // If the number contains '0', discard it immediately
         if (s.contains("0")) {
             return false;
         }
