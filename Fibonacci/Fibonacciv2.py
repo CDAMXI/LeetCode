@@ -1,0 +1,9 @@
+def fib(n):
+    if n == 0 or n == 1: return n
+    a, b = 0, 1
+    for _ in range(2, n + 1):
+        a, b = b, a + b
+    return b
+
+print(fib(10))  # Output: 55
+print(fib(20))  # Output: 6765
