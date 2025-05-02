@@ -8,6 +8,11 @@ public class PalindromeLinkedListv2 {
         System.out.print("Input: ");
         ListNode.printList(head);
         System.out.println("Output: " + isPalindrome(head));
+        
+        ListNode h = ListNode.buildList(new int[]{1, 2, 3, 4, 5});
+        System.out.print("Input: ");
+        ListNode.printList(h);
+        System.out.println("Output: " + isPalindrome(h));
     }
 
     public static boolean isPalindrome(ListNode head) {
