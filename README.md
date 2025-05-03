@@ -42,11 +42,11 @@ Each solution includes all the necessary classes to compile it as a standalone p
 
 ## Notes on Solution Quality:
 - ⚠️ Earlier attempts may have edge-case failures due to approach limitations.
-- ✅ v2+ (Final) → Fully tested & reliable. (Highest version number = most optimized!)
+- ✅ Highest version number = most optimized!
 - 🛠️ Contributions welcome! Open to optimizations or alternative approaches.
 - 🧪 All exercises include example test cases in the main method.
 
-##Side Notes
+## Side Notes
 - 📌 Some problems are inspired by real-world needs or common programming exercises and may not exist as standalone LeetCode problems. Said exercises are:
     - "IntegerToBinary"
     - "BinaryToInteger"
