@@ -46,7 +46,7 @@ Each solution includes all the necessary classes to compile it as a standalone p
 - 🛠️ Contributions welcome! Open to optimizations or alternative approaches.
 - 🧪 All exercises include example test cases in the main method.
 
-##Side Notes
+## Side Notes
 - 📌 Some problems are inspired by real-world needs or common programming exercises and may not exist as standalone LeetCode problems. Said exercises are:
     - "IntegerToBinary"
     - "BinaryToInteger"
