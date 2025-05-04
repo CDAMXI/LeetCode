@@ -51,3 +51,4 @@ Each solution includes all the necessary classes to compile it as a standalone p
     - "IntegerToBinary"
     - "BinaryToInteger"
     - "ValidSpanishID"
+    - "CalculateLetterInSpanishID"
