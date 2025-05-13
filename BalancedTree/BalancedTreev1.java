@@ -1,6 +1,6 @@
 package BalancedTree;
 
-import srccode.*;
+import zrccode.*;
 
 public class BalancedTreev1 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package srccode;
+package zrccode;
 
 public class ListNode {
     public int val;
