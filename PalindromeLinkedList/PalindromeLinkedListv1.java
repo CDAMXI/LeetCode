@@ -1,7 +1,7 @@
 package PalindromeLinkedList;
 
 import java.util.*;
-import zrccode.*;
+import _srccode.*;
 
 public class PalindromeLinkedListv1 {
     public static void main(String[] args) {

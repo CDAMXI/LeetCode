@@ -1,6 +1,6 @@
 package PalindromeLinkedList;
 
-import zrccode.*;
+import _srccode.*;
 
 public class PalindromeLinkedListv2 {
     public static void main(String[] args) {

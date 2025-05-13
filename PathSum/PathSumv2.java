@@ -1,6 +1,6 @@
 package PathSum;
 
-import srccode.*;
+import _srccode.*;
 
 public class PathSumv2 {
     public static void main(String[] args) {
