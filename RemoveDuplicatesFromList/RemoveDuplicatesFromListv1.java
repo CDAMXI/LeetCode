@@ -1,6 +1,6 @@
 package RemoveDuplicatesFromList;
 
-import srccode.*;
+import zrccode.*;
 public class RemoveDuplicatesFromListv1 {
     public static void main(String[] args) {
         ListNode list = new ListNode(1);

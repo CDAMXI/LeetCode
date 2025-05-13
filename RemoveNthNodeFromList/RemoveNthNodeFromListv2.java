@@ -1,6 +1,6 @@
 package RemoveNthNodeFromList;
 
-import srccode.*;
+import zrccode.*;
 
 public class RemoveNthNodeFromListv2 {
     public static void main(String[] args) {
