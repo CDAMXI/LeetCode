@@ -1,7 +1,7 @@
 package BinaryTreePaths;
 
 import java.util.*;
-import zrccode.*;
+import _srccode.*;
 
 public class BinaryTreePathsv2 {
     public static void main(String[] args) {
