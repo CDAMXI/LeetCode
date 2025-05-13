@@ -36,6 +36,17 @@ Each solution includes all the necessary classes to compile it as a standalone p
 1. Compile the file using ```javac FileName.java```.
 2. Run the compiled file with ```java FileName```.
 
+💻 From an IDE (like IntelliJ IDEA, Eclipse, or NetBeans):
+Open or import the .java file into your IDE.
+
+Make sure the file contains a main method (e.g., public static void main(String[] args)).
+
+Click the Run button (usually a green triangle ▶️ next to the method or at the top of the IDE).
+
+The program will execute in the built-in console.
+
+💡 Tip: Most IDEs automatically compile the code for you, so you can focus on writing and testing without worrying about manual compilation.
+
 ## Next Steps
 - Continue adding solutions to new problems.
 - Improve the efficiency of existing solutions.
