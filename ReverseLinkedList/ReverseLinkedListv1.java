@@ -1,4 +1,4 @@
-import zrccode.*;
+import _srccode.*;
 
 public class ReverseLinkedListv1{
     public static void main(String[] args) {

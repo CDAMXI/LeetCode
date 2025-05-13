@@ -1,6 +1,6 @@
 package RemoveLinkedListNthElement;
 
-import zrccode.*;
+import _srccode.*;
 
 public class RemoveLinkedListNthElementv1 {
     public static void main(String[] args) {
