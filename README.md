@@ -63,3 +63,4 @@ The program will execute in the built-in console.
     - "BinaryToInteger"
     - "ValidSpanishID"
     - "CalculateLetterInSpanishID"
+    - "CosmicTimeConverter"
