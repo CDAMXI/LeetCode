@@ -1,10 +1,10 @@
-package GuessNumber;
 
-public class GuessNumberv2 {
+
+public class GuessNumberv1 {
     private int pick; // Secret Number
 
     // Constructor method to establish the secret Number
-    public GuessNumberv2(int pick) {
+    public GuessNumberv1(int pick) {
         this.pick = pick;
     }
 
@@ -38,7 +38,7 @@ public class GuessNumberv2 {
 
     // Método para pruebas
     public static void main(String[] args) {
-        GuessNumberv2 game = new GuessNumberv2(6); // Establecemos que el número secreto es 6
+        GuessNumberv1 game = new GuessNumberv1(6); // Establecemos que el número secreto es 6
         int n = 10;
         int result = game.guessNumber(n);
         System.out.println("El número secreto es: " + result);
