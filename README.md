@@ -65,3 +65,4 @@ The program will execute in the built-in console.
     - "CalculateLetterInSpanishID"
     - "CosmicTimeConverter"
     - "NthFibNum"
+    - "CompareNames"
