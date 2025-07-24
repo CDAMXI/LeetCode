@@ -36,8 +36,7 @@ public class IntToStringv2 {
         try {
             if (num < 0) {
                 result.append("Negative ");
-                num *= -1;
-                
+                num *= -1; 
             }
             if (num >= 1_000_000_000) {
                 convertChunk(num / 1_000_000_000, result);
