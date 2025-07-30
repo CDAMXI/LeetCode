@@ -12,7 +12,12 @@ public class RemoveDuplicatesFromSortedArrayIIv1{
                 count++;
                 sum += nums[i];
             }
-            else{count = 1;}
+            else if(count == 2 && nums[i] == nums[i - 1]){continue;}
+            else if(count == 2 && nums[i] != nums[i - 1]){
+                count = 1;
+                sum += nums[i];
+            }
         }
+        return sum;
     }
 }
