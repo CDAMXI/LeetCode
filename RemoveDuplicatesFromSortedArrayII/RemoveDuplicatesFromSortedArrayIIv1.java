@@ -6,19 +6,20 @@ public class RemoveDuplicatesFromSortedArrayIIv1{
 
     public static int removeDuplicates(int[] nums) {
         if(nums == null || nums.length == 0) {return 0;}
-        Arrays.sort(nums);
-        int count = nums[0];
+        int sum = nums[0];
+        int count = 1;
         ArrayList<Integer> list = new ArrayList<>();
-        list.add(count);
+        list.add(sum);
         for(int i = 1; i < nums.length; i++) {
-            if(nums[i] != count) {
-                count = nums[i];
-                list.add(count);
+            if(count != 2 && nums[i] == nums[i - 1]){
+                count++;
+                sum += nums[i];
             }
+            else{count == 1;}
         }
 
         for(int i = 0; i < list.size(); i++) {
-            count += list.get(i);
+            sum += list.get(i);
         }
     }
 }
