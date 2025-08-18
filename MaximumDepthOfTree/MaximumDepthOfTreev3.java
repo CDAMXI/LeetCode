@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-import _srccode.*;
+import _srccode.TreeNode;
 
 public class MaximumDepthOfTreev3 {
     public static void main(String[] args) {
