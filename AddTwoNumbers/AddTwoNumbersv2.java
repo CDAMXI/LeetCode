@@ -1,28 +1,31 @@
-package AddTwoNumbers;
-
-import _srccode.*;
+// Define ListNde class if not already defined elsewhere
+class ListNde {
+    int val;
+    ListNde next;
+    ListNde(int val) { this.val = val; }
+}
 
 public class AddTwoNumbersv2 {
     public static void main(String[] args) {
-        // Create first ListNode with values [2, 4, 3]
-        ListNode l1 = new ListNode(2);
-        l1.next = new ListNode(4);
-        l1.next.next = new ListNode(3);
+        // Create first ListNde with values [2, 4, 3]
+        ListNde l1 = new ListNde(2);
+        l1.next = new ListNde(4);
+        l1.next.next = new ListNde(3);
 
-        // Create second ListNode with values [5, 6, 4]
-        ListNode l2 = new ListNode(5);
-        l2.next = new ListNode(6);
-        l2.next.next = new ListNode(4);
+        // Create second ListNde with values [5, 6, 4]
+        ListNde l2 = new ListNde(5);
+        l2.next = new ListNde(6);
+        l2.next.next = new ListNde(4);
 
         // Print the sum result
-        ListNode result = addTwoNumbers(l1, l2);
+        ListNde result = addTwoNumbers(l1, l2);
         System.out.println("Result of adding the two numbers (read left to right):");
         printList(result);
     }
 
-    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode result = new ListNode(0);  // Node dummy for the start of the list
-        ListNode current = result;  // Pointer to build the result list
+    public static ListNde addTwoNumbers(ListNde l1, ListNde l2) {
+        ListNde result = new ListNde(0);  // Node dummy for the start of the list
+        ListNde current = result;  // Pointer to build the result list
         int carry = 0;  // Variable for the sum carry
 
         // Go through both lists while there are nodes to add
@@ -40,7 +43,7 @@ public class AddTwoNumbersv2 {
             }
 
             carry = sum / 10;  // Calculating the carry
-            current.next = new ListNode(sum % 10);  // Create the new node with the sum value
+            current.next = new ListNde(sum % 10);  // Create the new node with the sum value
             current = current.next;  // Move pointer to the new node
         }
 
@@ -48,7 +51,7 @@ public class AddTwoNumbersv2 {
     }
 
     // Method to print the resulting list
-    public static void printList(ListNode node) {
+    public static void printList(ListNde node) {
         while (node != null) {
             System.out.print(node.val + " ");
             node = node.next;
