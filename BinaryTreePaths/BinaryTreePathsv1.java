@@ -1,7 +1,7 @@
 package BinaryTreePaths;
 
-import java.util.*;
 import _srccode.*;
+import java.util.*;
 
 public class BinaryTreePathsv1 {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class BinaryTreePathsv1 {
     }
 
     public static List<String> binaryTreePaths(TreeNode root) {
-        return binaryTreePaths(root, "" + root,new ArrayList<String>());
+        return binaryTreePaths(root, "" + root,new ArrayList<>());
     }
 
     public static List<String> binaryTreePaths(TreeNode root, String state, List<String> list) {
