@@ -1,7 +1,7 @@
 package PathSumII;
 
-import java.util.*;
 import _srccode.*;
+import java.util.*;
 public class PathSumIIv1 {
     public static void main(String[] args) {
         
@@ -9,7 +9,7 @@ public class PathSumIIv1 {
 
     
     public static List<Integer> pathSum(TreeNode root, int targetSum) {
-        List<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
         return pathSum(root, targetSum, list);
     }
 

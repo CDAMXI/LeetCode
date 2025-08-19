@@ -56,5 +56,17 @@
         "ValidSpanishID",
         "WildCardMatching"
     ],
-    "java.project.referencedLibraries": []
+    "java.project.referencedLibraries": [],
+    
+    "python.terminal.activateEnvironment": false,
+    
+    "python.defaultInterpreterPath": "C:/Python312/python.exe",
+    
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-17",
+            "path": "C:/Program Files/Java/jdk-17",
+            "default": true
+        }
+    ]
 }

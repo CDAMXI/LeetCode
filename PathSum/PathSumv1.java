@@ -13,7 +13,8 @@ public class PathSumv1 {
     }
 
     public static boolean hasPathSum(TreeNode root, int targetSum){
-        if (root.val > targetSum || root == null) {return false;}
+        if (root == null) {return false;}
+        if (root.val > targetSum) {return false;}
         else if(root.val == targetSum){return true;}
         if (root.left != null) {return hasPathSum(root.left, targetSum-root.val);}
         if (root.right != null) {return hasPathSum(root.right, targetSum-root.val);}
