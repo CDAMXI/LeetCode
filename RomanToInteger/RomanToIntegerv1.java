@@ -22,21 +22,25 @@ public class RomanToIntegerv1 {
         }else{
             for(int i = 0; i < s.length(); i++){
                 if (esMenorQueSiguiente(s, i)) {
-                    if(s.charAt(i) == 'I'){num -= 1;}
-                    else if(s.charAt(i) == 'V'){num  -= 5;}
-                    else if(s.charAt(i) == 'X'){num  -= 10;}
-                    else if(s.charAt(i) == 'L'){num  -= 50;}
-                    else if(s.charAt(i) == 'C'){num  -= 100;}
-                    else if(s.charAt(i) == 'D'){num -= 500;}
-                    else{num-=1000;}
+                    switch (s.charAt(i)) {
+                        case 'I' -> num -= 1;
+                        case 'V' -> num  -= 5;
+                        case 'X' -> num  -= 10;
+                        case 'L' -> num  -= 50;
+                        case 'C' -> num  -= 100;
+                        case 'D' -> num -= 500;
+                        default -> num-=1000;
+                    }
                 } else{
-                    if(s.charAt(i) == 'I'){num += 1;}
-                    else if(s.charAt(i) == 'V'){num += 5;}
-                    else if(s.charAt(i) == 'X'){num += 10;}
-                    else if(s.charAt(i) == 'L'){num += 50;}
-                    else if(s.charAt(i) == 'C'){num += 100;}
-                    else if(s.charAt(i) == 'D'){num += 500;}
-                    else{num += 1000;}
+                    switch (s.charAt(i)) {
+                        case 'I' -> num += 1;
+                        case 'V' -> num += 5;
+                        case 'X' -> num += 10;
+                        case 'L' -> num += 50;
+                        case 'C' -> num += 100;
+                        case 'D' -> num += 500;
+                        default -> num += 1000;
+                    }
                 }
             }
         }

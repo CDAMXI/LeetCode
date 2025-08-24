@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "RotateListv2",
+      "request": "launch",
+      "mainClass": "RotateList.RotateListv2",
+      "projectName": "7) LeetCode_64c8470f"
+    },
+    {
+      "type": "java",
+      "name": "RotateListv1",
+      "request": "launch",
+      "mainClass": "RotateList.RotateListv1",
+      "projectName": "7) LeetCode_64c8470f"
+    },
+    {
+      "type": "java",
       "name": "JumpGamev1",
       "request": "launch",
       "mainClass": "JumpGame.JumpGamev1",
