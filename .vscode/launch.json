@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "JumpGamev1",
+      "request": "launch",
+      "mainClass": "JumpGame.JumpGamev1",
+      "projectName": "7) LeetCode_64c8470f"
+    },
+    {
+      "type": "java",
       "name": "ScrambleStringv3",
       "request": "launch",
       "mainClass": "ScrambleString.ScrambleStringv3",
