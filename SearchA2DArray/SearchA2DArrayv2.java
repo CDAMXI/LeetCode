@@ -13,7 +13,7 @@ public class SearchA2DArrayv2 {
      */
     public static boolean searchMatrix(int[][] matrix, int target) {
         // Guard clauses for empty inputs
-        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) return false;
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {return false;}
 
         int m = matrix.length, n = matrix[0].length;
         int left = 0, right = m * n - 1;
@@ -24,8 +24,8 @@ public class SearchA2DArrayv2 {
             int c = mid % n;
             int val = matrix[r][c];
 
-            if (val == target) return true;
-            if (val < target) left = mid + 1;
+            if (val == target) {return true;}
+            if (val < target) {left = mid + 1;}
             else right = mid - 1;
         }
         return false;
