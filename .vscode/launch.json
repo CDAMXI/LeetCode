@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "NextPermutationv1",
+      "request": "launch",
+      "mainClass": "NextPermutation.NextPermutationv1",
+      "projectName": "7) LeetCode_64c8470f"
+    },
+    {
+      "type": "java",
       "name": "RotateListv2",
       "request": "launch",
       "mainClass": "RotateList.RotateListv2",
