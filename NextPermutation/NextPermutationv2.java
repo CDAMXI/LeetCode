@@ -16,12 +16,12 @@ public class NextPermutationv2 {
 
         // 1) Find the pivot: rightmost i with nums[i] < nums[i+1]
         int i = nums.length - 2;
-        while (i >= 0 && nums[i] >= nums[i + 1]) i--;
+        while (i >= 0 && nums[i] >= nums[i + 1]){i--;}
 
         if (i >= 0) {
             // 2) Find rightmost successor > nums[i]
             int j = nums.length - 1;
-            while (nums[j] <= nums[i]) j--;
+            while (nums[j] <= nums[i]){j--;}
             // 3) Swap pivot and successor
             swap(nums, i, j);
         }
