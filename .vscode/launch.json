@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SearchA2DArrayv1",
+      "request": "launch",
+      "mainClass": "SearchA2DArray.SearchA2DArrayv1",
+      "projectName": "7) LeetCode_64c8470f"
+    },
+    {
+      "type": "java",
       "name": "NextPermutationv1",
       "request": "launch",
       "mainClass": "NextPermutation.NextPermutationv1",
