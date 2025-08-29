@@ -26,7 +26,7 @@ public class SearchA2DArrayv2 {
 
             if (val == target) {return true;}
             if (val < target) {left = mid + 1;}
-            else right = mid - 1;
+            else {right = mid - 1;}
         }
         return false;
     }
