@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "WordPatternv1",
+      "request": "launch",
+      "mainClass": "WordPattern.WordPatternv1",
+      "projectName": "7) LeetCode_64c8470f"
+    },
+    {
+      "type": "java",
       "name": "IntersectionofTwoLinkedListsv1",
       "request": "launch",
       "mainClass": "IntersectionofTwoLinkedLists.IntersectionofTwoLinkedListsv1",
