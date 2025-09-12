@@ -1,5 +1,10 @@
 public class ContainerWithMostWaterv2 {
-    public int maxArea(int[] height) {
+    public static void main(String[] args) {
+        System.out.println(maxArea(new int[]{1,8,6,2,5,4,8,3,7})); // Output: 49
+        System.out.println(maxArea(new int[]{1,1})); // Output: 1
+    }
+    
+    public static int maxArea(int[] height) {
         int left = 0, right = height.length - 1;
         int maxArea = 0;
 
