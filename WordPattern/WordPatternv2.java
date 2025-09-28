@@ -1,5 +1,6 @@
-import java.util.HashMap;
-import java.util.Map;
+package WordPattern;
+
+import java.util.*;
 
 public class WordPatternv2 {
     public static void main(String[] args) {

@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "WordPatternv2",
+      "request": "launch",
+      "mainClass": "WordPattern.WordPatternv2",
+      "projectName": "7) LeetCode_64c8470f"
+    },
+    {
+      "type": "java",
       "name": "WordPatternv1",
       "request": "launch",
       "mainClass": "WordPattern.WordPatternv1",
