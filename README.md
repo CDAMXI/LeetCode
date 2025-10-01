@@ -5,11 +5,11 @@ This repository contains all the solutions I have developed for LeetCode problem
 - **Required Classes for Compilation**: All auxiliary classes and definitions needed to run the solutions independently.
 - **Attempts and Versions**: Each exercise may include multiple attempts to showcase the thought process and improvements made.
 
-## Repository Structure
+## 📊 Progress
+- ✅ 70+ problems solved (and growing)
+- 🔑 Focus: Arrays, Strings, Graphs, Dynamic Programming, Recursion
+- 💻 Language: Java (future work planned in Python)
 
-- **📂 Folders by Category**: Problems are organized into folders by category for easy navigation.
-- **📄 Descriptive File Names**: Each code file is named after the problem's title and its corresponding version.
-- **🗂️ Common Data Structures**: All common data structures are located in ```srccode``` folder.
 
 ## Example Solution
 ```java
@@ -66,3 +66,4 @@ The program will execute in the built-in console.
     - "CosmicTimeConverter"
     - "NthFibNum"
     - "CompareNames"
+
