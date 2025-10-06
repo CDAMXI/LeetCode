@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DecodeWaysv1",
+      "request": "launch",
+      "mainClass": "DecodeWays.DecodeWaysv1",
+      "projectName": "7) LeetCode_64c8470f"
+    },
+    {
+      "type": "java",
+      "name": "Subsetsv3",
+      "request": "launch",
+      "mainClass": "Subsets.Subsetsv3",
+      "projectName": "7) LeetCode_64c8470f"
+    },
+    {
+      "type": "java",
       "name": "Subsetsv2",
       "request": "launch",
       "mainClass": "Subsets.Subsetsv2",
