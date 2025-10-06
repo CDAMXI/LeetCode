@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Subsetsv2",
+      "request": "launch",
+      "mainClass": "Subsets.Subsetsv2",
+      "projectName": "7) LeetCode_64c8470f"
+    },
+    {
+      "type": "java",
+      "name": "Subsetsv1",
+      "request": "launch",
+      "mainClass": "Subsets.Subsetsv1",
+      "projectName": "7) LeetCode_64c8470f"
+    },
+    {
+      "type": "java",
       "name": "WordPatternv2",
       "request": "launch",
       "mainClass": "WordPattern.WordPatternv2",
