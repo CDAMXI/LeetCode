@@ -1,7 +1,5 @@
-
-
 public class GuessNumberv1 {
-    private int pick; // Secret Number
+    private final int pick; // Secret Number
 
     // Constructor method to establish the secret Number
     public GuessNumberv1(int pick) {
