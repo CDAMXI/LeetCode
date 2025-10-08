@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "JumpGamev2",
+      "request": "launch",
+      "mainClass": "JumpGame.JumpGamev2",
+      "projectName": "7) LeetCode_64c8470f"
+    },
+    {
+      "type": "java",
       "name": "DecodeWaysv1",
       "request": "launch",
       "mainClass": "DecodeWays.DecodeWaysv1",

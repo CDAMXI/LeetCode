@@ -30,16 +30,16 @@ public class LetterCombinationv1 {
         }
     }
     public static String getLetters(char letter){
-        switch (letter) {
-            case '2': return "abc";
-            case '3': return "def";
-            case '4': return "ghi";
-            case '5': return "jkl";
-            case '6': return "mno";
-            case '7': return "pqrs";
-            case '8': return "tuv";
-            case '9': return "wxyz";
-            default: return "";
-        }
+        return switch (letter) {
+            case '2' -> "abc";
+            case '3' -> "def";
+            case '4' -> "ghi";
+            case '5' -> "jkl";
+            case '6' -> "mno";
+            case '7' -> "pqrs";
+            case '8' -> "tuv";
+            case '9' -> "wxyz";
+            default -> "";
+        };
     }
 }
