@@ -15,7 +15,7 @@ public class MyAtoiv1{
                 s = s.substring(1);
             }
             return Integer.parseInt(aux);
-        }catch(Exception e){
+        }catch(NumberFormatException e){
             return 0;
         }
     }
