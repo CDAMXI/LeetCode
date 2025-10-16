@@ -4,32 +4,31 @@ import java.util.*;
 
 public class PascalsTrianglev2 {
     public static void main(String[] args) {
-        Scanner kbd = new Scanner(System.in);
-        boolean isValid = false;
-
-        while (!isValid) {
-            try {
-                System.out.print("Enter the number of rows desired for Pascal's Triangle: ");
-                int rows = kbd.nextInt();
-                
-                if (rows <= 0) {
-                    System.out.println("Please enter a positive integer.");
-                    continue; // Ask for a valid value again
+        try (Scanner kbd = new Scanner(System.in)) {
+            boolean isValid = false;
+            while (!isValid) {
+                try {
+                    System.out.print("Enter the number of rows desired for Pascal's Triangle: ");
+                    int rows = kbd.nextInt();
+                    
+                    if (rows <= 0) {
+                        System.out.println("Please enter a positive integer.");
+                        continue; // Ask for a valid value again
+                    }
+                    
+                    List<List<Integer>> pascalTriangle = generate(rows);
+                    for (List<Integer> row : pascalTriangle) {
+                        System.out.println(row);
+                    }
+                    
+                    isValid = true; // A valid value is entered, exit the loop
+                } catch (InputMismatchException e) {
+                    System.out.println("Invalid input. Please enter a positive integer.");
+                    kbd.next(); // Consume the invalid token
                 }
-
-                List<List<Integer>> pascalTriangle = generate(rows);
-                for (List<Integer> row : pascalTriangle) {
-                    System.out.println(row);
-                }
-
-                isValid = true; // A valid value is entered, exit the loop
-            } catch (InputMismatchException e) {
-                System.out.println("Invalid input. Please enter a positive integer.");
-                kbd.next(); // Consume the invalid token
             }
+            // Close the scanner at the end
         }
-
-        kbd.close(); // Close the scanner at the end
     }
 
     public static List<List<Integer>> generate(int numRows) {
