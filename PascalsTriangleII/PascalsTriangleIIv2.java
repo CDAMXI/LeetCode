@@ -4,24 +4,23 @@ import java.util.*;
 
 public class PascalsTriangleIIv2 {
     public static void main(String[] args) {
-        Scanner kbd = new Scanner(System.in);
-        int rows = -1;
-
-        while (rows < 0) {
-            try {
-                System.out.print("Enter the row index for Pascal's Triangle: ");
-                rows = kbd.nextInt();
-
-                if (rows < 0) {
-                    System.out.println("Please enter a non-negative integer.");
+        int rows;
+        try (Scanner kbd = new Scanner(System.in)) {
+            rows = -1;
+            while (rows < 0) {
+                try {
+                    System.out.print("Enter the row index for Pascal's Triangle: ");
+                    rows = kbd.nextInt();
+                    
+                    if (rows < 0) {
+                        System.out.println("Please enter a non-negative integer.");
+                    }
+                } catch (InputMismatchException e) {
+                    System.out.println("Invalid input. Please enter an integer.");
+                    kbd.next(); // Consume the invalid token
                 }
-            } catch (InputMismatchException e) {
-                System.out.println("Invalid input. Please enter a non-negative integer.");
-                kbd.next(); // Consume the invalid token
             }
         }
-
-        kbd.close();
 
         // Get the desired row
         List<Integer> pascalRow = getRow(rows);

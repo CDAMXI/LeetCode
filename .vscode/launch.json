@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SetMatrixZeroesv2",
+      "request": "launch",
+      "mainClass": "SetMatrixZeroes.SetMatrixZeroesv2",
+      "projectName": "7) LeetCode_64c8470f"
+    },
+    {
+      "type": "java",
+      "name": "SetMatrixZeroesv1",
+      "request": "launch",
+      "mainClass": "SetMatrixZeroes.SetMatrixZeroesv1",
+      "projectName": "7) LeetCode_64c8470f"
+    },
+    {
+      "type": "java",
       "name": "JumpGamev2",
       "request": "launch",
       "mainClass": "JumpGame.JumpGamev2",
