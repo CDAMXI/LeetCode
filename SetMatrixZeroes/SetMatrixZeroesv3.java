@@ -1,4 +1,4 @@
-package SetMatrixZeroes;
+package setmatrixzeroes;
 
 public class SetMatrixZeroesv3 {
     public static void main(String[] args) {
@@ -27,45 +27,45 @@ public class SetMatrixZeroesv3 {
     }
     
     public static void setZeroes(int[][] matrix) {
-    int rows = matrix.length;
-    if (rows == 0) return;
-    int cols = matrix[0].length;
+        int rows = matrix.length;
+        if (rows == 0) return;
+        int cols = matrix[0].length;
 
-    boolean firstRowZero = false;
-    boolean firstColZero = false;
+        boolean firstRowZero = false;
+        boolean firstColZero = false;
 
-    // Detectar ceros en primera fila y primera columna
-    for (int j = 0; j < cols; j++) firstRowZero |= (matrix[0][j] == 0);
-    for (int i = 0; i < rows; i++) firstColZero |= (matrix[i][0] == 0);
+        // Detectar ceros en primera fila y primera columna
+        for (int j = 0; j < cols; j++) firstRowZero |= (matrix[0][j] == 0);
+        for (int i = 0; i < rows; i++) firstColZero |= (matrix[i][0] == 0);
 
-    // Marcar usando primera fila/columna
-    for (int i = 1; i < rows; i++) {
-        int[] row = matrix[i];
-        for (int j = 1; j < cols; j++) {
-            if (row[j] == 0) {
-                row[0] = 0;
-                matrix[0][j] = 0;
+        // Marcar usando primera fila/columna
+        for (int i = 1; i < rows; i++) {
+            int[] row = matrix[i];
+            for (int j = 1; j < cols; j++) {
+                if (row[j] == 0) {
+                    row[0] = 0;
+                    matrix[0][j] = 0;
+                }
             }
         }
-    }
 
-    // Aplicar marcas
-    for (int i = 1; i < rows; i++) {
-        int[] row = matrix[i];
-        boolean zeroThisRow = (row[0] == 0);
-        for (int j = 1; j < cols; j++) {
-            if (zeroThisRow || matrix[0][j] == 0) {
-                row[j] = 0;
+        // Aplicar marcas
+        for (int i = 1; i < rows; i++) {
+            int[] row = matrix[i];
+            boolean zeroThisRow = (row[0] == 0);
+            for (int j = 1; j < cols; j++) {
+                if (zeroThisRow || matrix[0][j] == 0) {
+                    row[j] = 0;
+                }
             }
         }
-    }
 
-    // Zerar primera fila/col si tocaba
-    if (firstRowZero) {
-        for (int j = 0; j < cols; j++) matrix[0][j] = 0;
+        // Zerar primera fila/col si tocaba
+        if (firstRowZero) {
+            for (int j = 0; j < cols; j++) matrix[0][j] = 0;
+        }
+        if (firstColZero) {
+            for (int i = 0; i < rows; i++) matrix[i][0] = 0;
+        }
     }
-    if (firstColZero) {
-        for (int i = 0; i < rows; i++) matrix[i][0] = 0;
-    }
-}
 }
