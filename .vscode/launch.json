@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Combinationsv1",
+      "request": "launch",
+      "mainClass": "Combinations.Combinationsv1",
+      "projectName": "7) LeetCode_64c8470f"
+    },
+    {
+      "type": "java",
       "name": "SetMatrixZeroesv2",
       "request": "launch",
       "mainClass": "SetMatrixZeroes.SetMatrixZeroesv2",

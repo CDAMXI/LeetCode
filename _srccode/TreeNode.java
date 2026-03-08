@@ -18,23 +18,23 @@ public class TreeNode {
     }
 
     // Builds a binary tree from a level-order array. Use `null` for missing nodes.
-    public static TreeNode buildTree(Integer[] values) {
-        if (values == null || values.length == 0 || values[0] == null) return null;
+    public static TreeNode buildTree(Integer[] nums) {
+        if (nums == null || nums.length == 0 || nums[0] == null) return null;
 
-        TreeNode root = new TreeNode(values[0]);
+        TreeNode root = new TreeNode(nums[0]);
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
 
         int i = 1;
-        while (i < values.length) {
+        while (i < nums.length) {
             TreeNode current = queue.poll();
-            if (values[i] != null) {
-                current.left = new TreeNode(values[i]);
+            if (nums[i] != null) {
+                current.left = new TreeNode(nums[i]);
                 queue.offer(current.left);
             }
             i++;
-            if (i < values.length && values[i] != null) {
-                current.right = new TreeNode(values[i]);
+            if (i < nums.length && nums[i] != null) {
+                current.right = new TreeNode(nums[i]);
                 queue.offer(current.right);
             }
             i++;

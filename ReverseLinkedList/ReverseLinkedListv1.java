@@ -1,5 +1,3 @@
-import _srccode.*;
-
 public class ReverseLinkedListv1{
     public static void main(String[] args) {
         ListNode head = createListNode(new int[] {1, 2, 3, 4, 5, 6 ,7});
