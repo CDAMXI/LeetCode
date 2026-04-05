@@ -1,5 +1,4 @@
 package StringToInt;
-
 import java.util.HashMap;
 import java.util.Map;
 

@@ -1,5 +1,4 @@
 package StringToInt;
-
 public class StringToIntv1 {
     public static void main(String[] args){
         System.out.println(stringToInt("Zero"));

@@ -5,57 +5,7 @@
     },
     "workbench.editor.alwaysShowEditorActions": false,
     "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "expand",
-    "java.project.sourcePaths": [
-        ".",
-        "BinaryWatch",
-        "CombinationSum",
-        "CompareNames",
-        "ContainerWithMostWater",
-        "ContainsDuplicatesII",
-        "ContainsDuplicatesIII",
-        "CountCompleteTreeNodes",
-        "DivideTwoIntegers",
-        "FindAllMissingNumsInArray",
-        "FindFirst&LastPosInSortedArray",
-        "FirstUniqueCharInString",
-        "GenerateParenthesis",
-        "GuessNumber",
-        "HappyNumber",
-        "IntegerToBinary",
-        "IntegerToHEX",
-        "IntegerToRoman",
-        "IntersectionOfTwoArrays",
-        "IntToString",
-        "LongestSubStringWithoutRepeatingChars",
-        "LongestValidParentheses",
-        "MaxConsecutiveOnes",
-        "MaximumDepthOfTree",
-        "MergeIntervals",
-        "MergekSortedLists",
-        "MergeTwoLists",
-        "MultiplyStrings",
-        "MyAtoi",
-        "NthFibNum",
-        "NumberOf1Bits",
-        "PalindormePartitioningII",
-        "PathSumIII",
-        "PeakIndexInMountainArray",
-        "Permutations",
-        "PermutationsII",
-        "PlusOne",
-        "RegularExpressionMatching",
-        "RemoveDuplicatesFromSortedArrayII",
-        "ReverseBits",
-        "ReverseLinkedList",
-        "SimplifyPath",
-        "SingleNumberII",
-        "SlidingWIndowMedian",
-        "SortColors",
-        "SumOfLeftLeaves",
-        "TypeOfTriangle",
-        "ValidSpanishID",
-        "WildCardMatching"
-    ],
+    "java.project.sourcePaths": ["."],
     "java.project.referencedLibraries": [],
     
     "python.terminal.activateEnvironment": false,
@@ -63,10 +13,10 @@
     "python.defaultInterpreterPath": "C:/Python312/python.exe",
     
     "java.configuration.runtimes": [
-        {
-            "name": "JavaSE-17",
-            "path": "C:/Program Files/Java/jdk-17",
-            "default": true
-        }
-    ]
+    {
+        "name": "JavaSE-25",
+        "path": "C:/Program Files/Java/jdk-25",
+        "default": true
+    }
+]
 }
