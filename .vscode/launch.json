@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "RomanToIntegerv2",
+      "request": "launch",
+      "mainClass": "RomanToIntegerv2",
+      "projectName": "7) LeetCode_64c8470f"
+    },
+    {
+      "type": "java",
       "name": "Combinationsv1",
       "request": "launch",
       "mainClass": "Combinations.Combinationsv1",
