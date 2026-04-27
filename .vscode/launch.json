@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "InsertIntervalsv1",
+      "request": "launch",
+      "mainClass": "p57_InsertInterval.InsertIntervalsv1",
+      "projectName": "6. LeetCode_9552c9e9"
+    },
+    {
+      "type": "java",
+      "name": "GroupAnagramsv1",
+      "request": "launch",
+      "mainClass": "p49_GroupAnagrams.GroupAnagramsv1",
+      "projectName": "6. LeetCode_9552c9e9"
+    },
+    {
+      "type": "java",
       "name": "RomanToIntegerv2",
       "request": "launch",
       "mainClass": "p13_RomanToInteger.RomanToIntegerv2",
