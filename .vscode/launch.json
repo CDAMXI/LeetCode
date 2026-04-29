@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Swap2NodesInPairsv1",
+      "request": "launch",
+      "mainClass": "p24_Swap2NodesInPairs.Swap2NodesInPairsv1",
+      "projectName": "6. LeetCode_9552c9e9"
+    },
+    {
+      "type": "java",
       "name": "InsertIntervalsv1",
       "request": "launch",
       "mainClass": "p57_InsertInterval.InsertIntervalsv1",
