@@ -15,7 +15,9 @@ public class RegularExpressionMatchingv2 {
         // Initialize dp for patterns like a*, a*b*, a*b*c*, etc.
         for (int j = 2; j <= n; j++) {
             if (p.charAt(j - 1) == '*' && dp[0][j - 2]) {
+
                 dp[0][j] = true;
+
             }
         }
 
