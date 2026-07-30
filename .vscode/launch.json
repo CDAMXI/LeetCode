@@ -2,6 +2,27 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "RemoveDuplicatesFromSortedListIIv1",
+      "request": "launch",
+      "mainClass": "p82_RemoveDuplicatesFromSortedListII.RemoveDuplicatesFromSortedListIIv1",
+      "projectName": "6. LeetCode_9552c9e9"
+    },
+    {
+      "type": "java",
+      "name": "RomanToIntegerv1",
+      "request": "launch",
+      "mainClass": "p13_RomanToInteger.RomanToIntegerv1",
+      "projectName": "6. LeetCode_9552c9e9"
+    },
+    {
+      "type": "java",
+      "name": "Suma",
+      "request": "launch",
+      "mainClass": "Suma",
+      "projectName": "6. LeetCode_9552c9e9"
+    },
+    {
       "name": "Python Debugger: Current File",
       "type": "debugpy",
       "request": "launch",
