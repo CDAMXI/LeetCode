@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "AddStringv2",
+      "request": "launch",
+      "mainClass": "p415_AddStrings.AddStringv2",
+      "projectName": "6. LeetCode_9552c9e9"
+    },
+    {
+      "type": "java",
+      "name": "AddStringsv2",
+      "request": "launch",
+      "mainClass": "p415_AddStrings.AddStringsv2",
+      "projectName": "6. LeetCode_9552c9e9"
+    },
+    {
+      "type": "java",
+      "name": "AddStringsv1",
+      "request": "launch",
+      "mainClass": "p415_AddStrings.AddStringsv1",
+      "projectName": "6. LeetCode_9552c9e9"
+    },
+    {
+      "type": "java",
       "name": "RemoveDuplicatesFromSortedListIIv1",
       "request": "launch",
       "mainClass": "p82_RemoveDuplicatesFromSortedListII.RemoveDuplicatesFromSortedListIIv1",
