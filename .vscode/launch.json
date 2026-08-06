@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "condicionesCarrera",
+      "request": "launch",
+      "mainClass": "condicionesCarrera",
+      "projectName": "04 · LeetCode_42e19b66"
+    },
+    {
+      "type": "java",
       "name": "AddStringv2",
       "request": "launch",
       "mainClass": "p415_AddStrings.AddStringv2",
