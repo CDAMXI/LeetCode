@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StringToIntv3",
+      "request": "launch",
+      "mainClass": "StringToInt.StringToIntv3",
+      "projectName": "04 · LeetCode_42e19b66"
+    },
+    {
+      "type": "java",
       "name": "condicionesCarrera",
       "request": "launch",
       "mainClass": "condicionesCarrera",
