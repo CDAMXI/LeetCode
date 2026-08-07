@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StringToIntv4",
+      "request": "launch",
+      "mainClass": "StringToInt.StringToIntv4",
+      "projectName": "04 · LeetCode_42e19b66"
+    },
+    {
+      "type": "java",
       "name": "StringToIntv3",
       "request": "launch",
       "mainClass": "StringToInt.StringToIntv3",
