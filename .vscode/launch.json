@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "KthSmallestNumberInTimesTablev1",
+      "request": "launch",
+      "mainClass": "p668_KthSmallestNumberInTimesTable.KthSmallestNumberInTimesTablev1",
+      "projectName": "04 · LeetCode_42e19b66"
+    },
+    {
+      "type": "java",
       "name": "CreateMaximumNumberv2",
       "request": "launch",
       "mainClass": "p321_CreateMaximumNumber.CreateMaximumNumberv2",
