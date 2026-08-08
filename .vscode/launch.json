@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CreateMaximumNumberv2",
+      "request": "launch",
+      "mainClass": "p321_CreateMaximumNumber.CreateMaximumNumberv2",
+      "projectName": "04 · LeetCode_42e19b66"
+    },
+    {
+      "type": "java",
+      "name": "CreateMaximumNumberv1",
+      "request": "launch",
+      "mainClass": "p321_CreateMaximumNumber.CreateMaximumNumberv1",
+      "projectName": "04 · LeetCode_42e19b66"
+    },
+    {
+      "type": "java",
+      "name": "IntToStringv2",
+      "request": "launch",
+      "mainClass": "p273_IntToString.IntToStringv2",
+      "projectName": "04 · LeetCode_42e19b66"
+    },
+    {
+      "type": "java",
       "name": "StringToIntv4",
       "request": "launch",
       "mainClass": "StringToInt.StringToIntv4",
