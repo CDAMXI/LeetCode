@@ -1,3 +1,4 @@
+package p2265_CountNodesEqualToAverageofSubtree;
 import java.util.*;
 
 public class TreeNode {

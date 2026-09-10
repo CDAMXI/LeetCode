@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CountNodesEqualToAverageofSubtreev2",
+      "request": "launch",
+      "mainClass": "p2265_CountNodesEqualToAverageofSubtree.CountNodesEqualToAverageofSubtreev2",
+      "projectName": "04 · LeetCode_42e19b66"
+    },
+    {
+      "type": "java",
+      "name": "CountNodesEqualToAverageofSubtreev1",
+      "request": "launch",
+      "mainClass": "p2265_CountNodesEqualToAverageofSubtree.CountNodesEqualToAverageofSubtreev1",
+      "projectName": "04 · LeetCode_42e19b66"
+    },
+    {
+      "type": "java",
+      "name": "SmallestStableIndexIIv1",
+      "request": "launch",
+      "mainClass": "p3904_SmallestStableIndexII.SmallestStableIndexIIv1",
+      "projectName": "04 · LeetCode_42e19b66"
+    },
+    {
+      "type": "java",
       "name": "KthSmallestNumberInTimesTablev1",
       "request": "launch",
       "mainClass": "p668_KthSmallestNumberInTimesTable.KthSmallestNumberInTimesTablev1",
